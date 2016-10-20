@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CateMenu</string>
+    <string name="sucai">素菜</string>
+    <string name="huncai">荤菜</string>
+    <string name="tangcai">汤菜</string>
+    <string name="dianxin">点心</string>
+    <string name="homepage">首页</string>
+    <string name="classify">分类</string>
+    <string name="shop">商城</string>
+    <string name="yanhui">宴会助手</string>
+    <string name="square">广场</string>
+
+
 </resources>

@@ -1,4 +1,4 @@
-package com.classify.homepage;
+package com.weipao.classifyhomepage;
 
 import android.app.Activity;
 import android.os.Bundle;

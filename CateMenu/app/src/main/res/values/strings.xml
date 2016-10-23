@@ -9,6 +9,15 @@
     <string name="shop">商城</string>
     <string name="yanhui">宴会助手</string>
     <string name="square">广场</string>
-
+    <string name="scan">浏览:</string>
+    <string name="tuijian">推荐</string>
+    <string name="nandu">难度:</string>
+    <string name="time_lenghth">时长:</string>
+    <string name="introduce">介绍:</string>
+    <string name="xiangjianqiebing">香煎茄饼</string>
+    <string name="add_menu">加入菜单</string>
+    <string name="collect">收藏</string>
+    <string name="foodxiangqing">菜品详情</string>
+    <string name="chihuotaolun">吃货讨论</string>
 
 </resources>

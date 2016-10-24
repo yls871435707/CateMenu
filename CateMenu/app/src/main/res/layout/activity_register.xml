@@ -71,6 +71,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
             android:gravity="center_vertical"
+            android:alpha="0.7"
             android:background="@drawable/login_editext_phone_bg"
             android:orientation="horizontal">
 
@@ -79,7 +80,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
-                android:alpha="0.7"
+
                 android:drawableLeft="@mipmap/register_authcode"
                 android:drawablePadding="5dp"
                 android:gravity="center_vertical"

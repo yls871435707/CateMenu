@@ -1,4 +1,4 @@
-package com.navigationpage;
+package com.weipao.Login;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,13 +6,12 @@ import android.os.Bundle;
 import com.example.administrator.catemenu.R;
 
 /**
- * Created by Administrator on 2016/10/25.
+ * Created by Administrator on 2016/10/31.
  */
-public class GuidePageOne extends Activity {
+public class LonginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_guidepage_one);
-
+        setContentView(R.layout.activity_login);
     }
 }

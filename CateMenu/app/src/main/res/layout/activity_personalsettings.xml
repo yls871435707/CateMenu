@@ -74,10 +74,12 @@
             android:text="贪吃的蚂蚁"
             android:textSize="15sp" />
     </LinearLayout>
+
     <View
-        android:background="#999999"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:background="#999999" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -99,10 +101,12 @@
             android:text="重庆市xxxxxxx"
             android:textSize="15sp" />
     </LinearLayout>
+
     <View
-        android:background="#999999"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:background="#999999" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -124,10 +128,12 @@
             android:text="156796127962"
             android:textSize="15sp" />
     </LinearLayout>
+
     <View
-        android:background="#999999"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:background="#999999" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -149,10 +155,12 @@
             android:text="男"
             android:textSize="15sp" />
     </LinearLayout>
+
     <View
-        android:background="#999999"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:background="#999999" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -174,8 +182,9 @@
             android:text="麻辣"
             android:textSize="15sp" />
     </LinearLayout>
+
     <View
-        android:background="#999999"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:background="#999999" />
 </LinearLayout>

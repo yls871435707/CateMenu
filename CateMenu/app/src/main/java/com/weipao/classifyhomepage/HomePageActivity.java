@@ -12,6 +12,6 @@ public class HomePageActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homepage_classify);
+        setContentView(R.layout.fragment_homepage);
     }
 }

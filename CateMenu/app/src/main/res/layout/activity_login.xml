@@ -108,19 +108,19 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/login_wechat" />
+            android:src="@mipmap/wechat" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
-            android:src="@mipmap/longin_qq" />
+            android:src="@mipmap/qq" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
-            android:src="@mipmap/login_microblog" />
+            android:src="@mipmap/twitter" />
     </LinearLayout>
 
 

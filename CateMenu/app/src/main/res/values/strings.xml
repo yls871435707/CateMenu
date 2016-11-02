@@ -21,5 +21,13 @@
     <string name="chihuotaolun">吃货讨论</string>
     <string name="comment">我要评论</string>
     <string name="share">分享</string>
+    <string name="mine">我的</string>
+    <string name="qiandao">今日签到</string>
+    <string name="shezhi">个人设置</string>
+    <string name="mimaxiugai">密码修改</string>
+    <string name="shangchuan">上传</string>
+    <string name="sixin">私信</string>
+    <string name="shoucang">收藏</string>
+    <string name="guanzhu">关注</string>
 
 </resources>

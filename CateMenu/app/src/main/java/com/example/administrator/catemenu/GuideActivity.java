@@ -27,9 +27,9 @@ public class GuideActivity extends Activity {
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         LayoutInflater layoutInflater = LayoutInflater.from(this);
-        View view = layoutInflater.inflate(R.layout.activity_guidepage_one, null);
-        View view1 = layoutInflater.inflate(R.layout.activity_guidepage_tow, null);
-        View view2 = layoutInflater.inflate(R.layout.activity_guidepage_three, null);
+        View view = layoutInflater.inflate(R.layout.viewpager_guidepage_one, null);
+        View view1 = layoutInflater.inflate(R.layout.viewpager_guidepage_two, null);
+        View view2 = layoutInflater.inflate(R.layout.viewpager_guidepage_three, null);
         arraylist = new ArrayList<View>();
         arraylist.add(view);
         arraylist.add(view1);

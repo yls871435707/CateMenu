@@ -28,6 +28,8 @@
         <activity android:name=".MineActivity"/>
         <activity android:name=".ChangePasswordActivity"/>
         <activity android:name=".PersonalSettingsActivity"/>
+        <activity android:name=".FoodDetailsActivity"/>
+        <activity android:name=".FoodPaymentDetailsActivity"/>
     </application>
 
 </manifest>

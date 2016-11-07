@@ -30,5 +30,6 @@
     <string name="shoucang">收藏</string>
     <string name="guanzhu">关注</string>
     <string name="caidanfangan">菜单方案</string>
+    <string name="person_settings">个人设置</string>
 
 </resources>

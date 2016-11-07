@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.Adapter.ViewPagerAdapter;
+import com.adapter.ViewPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

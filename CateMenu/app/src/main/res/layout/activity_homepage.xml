@@ -199,6 +199,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/yellow"
+
         android:paddingTop="10dp"
         android:paddingBottom="4dp">
         <TextView
@@ -243,6 +244,7 @@
             android:layout_height="wrap_content"
             android:text="@string/square"
             android:gravity="center"
+
             android:textSize="11sp"
             android:drawableTop="@mipmap/square"
             android:drawablePadding="5dp"/>

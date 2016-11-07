@@ -1,19 +1,14 @@
-package com.weipao.guide;
+package com.example.administrator.catemenu;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
 import com.Adapter.ViewPagerAdapter;
-import com.example.administrator.catemenu.R;
-import com.weipao.Login.LonginActivity;
-import com.weipao.classifyhomepage.HomePageActivity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.weipao.register;
+package com.example.administrator.catemenu;
 
 import android.app.Activity;
 import android.os.Bundle;

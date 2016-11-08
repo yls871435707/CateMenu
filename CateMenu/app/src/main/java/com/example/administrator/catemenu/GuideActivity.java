@@ -19,7 +19,7 @@ import java.util.List;
 public class GuideActivity extends Activity {
     ViewPager viewPager;
     List<View> arraylist;
-    TextView tv_getlogin;
+    TextView tvgetlogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +38,8 @@ public class GuideActivity extends Activity {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(arraylist);
         viewPager.setAdapter(viewPagerAdapter);
 
-        tv_getlogin = (TextView) view2.findViewById(R.id.tv_getlogin);
-        tv_getlogin.setOnClickListener(new View.OnClickListener() {
+        tvgetlogin = (TextView) view2.findViewById(R.id.tv_getlogin);
+        tvgetlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(GuideActivity.this, HomePageActivity.class);

@@ -42,7 +42,7 @@ public class GuideActivity extends Activity {
         tvgetlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GuideActivity.this, HomePageActivity.class);
+                Intent intent = new Intent(GuideActivity.this,HomePageLoginActivity.class);
                 startActivity(intent);
             }
         });

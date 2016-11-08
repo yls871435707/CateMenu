@@ -1,4 +1,4 @@
-package com.weipao.classifyhomepage;
+package com.weipao.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,12 +6,12 @@ import android.os.Bundle;
 import com.example.administrator.catemenu.R;
 
 /**
- * Created by Administrator on 2016/10/20.
+ * Created by Administrator on 2016/10/31.
  */
-public class HomePageActivity extends Activity {
+public class LonginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_homepage);
+        setContentView(R.layout.activity_login);
     }
 }

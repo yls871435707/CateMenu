@@ -34,5 +34,7 @@
     <string name="person_settings">个人设置</string>
     <string name="caidanjia">菜单夹</string>
     <string name="start_order">开始排序</string>
+    <string name="bzph">本周排行</string>
+    <string name="jrtj">今日推荐</string>
 
 </resources>

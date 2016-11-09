@@ -8,22 +8,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-<<<<<<< HEAD
-        </activity>
-        <activity android:name="com.weipao.activity.GuideActivity">
-=======
         <activity android:name=".GuideActivity">
->>>>>>> master
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name="com.weipao.activity.HomePageActivity"/>
-=======
         <activity android:name=".MainActivity"/>
         <activity android:name=".HomePageActivity"/>
         <activity android:name=".RegisterActivity"/>
@@ -38,7 +30,9 @@
         <activity android:name=".PersonalSettingsActivity"/>
         <activity android:name=".FoodDetailsActivity"/>
         <activity android:name=".FoodPaymentDetailsActivity"/>
->>>>>>> master
+        <activity android:name=".VideoActivity"/>
+        <activity android:name=".MenuFileActivity"/>
+        <activity android:name=".TasteSettingsActivity"/>
     </application>
 
 </manifest>

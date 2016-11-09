@@ -32,10 +32,7 @@
     <string name="video">视频</string>
     <string name="caidanfangan">菜单方案</string>
     <string name="person_settings">个人设置</string>
-<<<<<<< HEAD
     <string name="caidanjia">菜单夹</string>
     <string name="start_order">开始排序</string>
-=======
->>>>>>> 5d0f6b541b7ecb8b1360861c7cb6e6f31c5b6d1c
 
 </resources>

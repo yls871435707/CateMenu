@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.Adapter.ViewPagerAdapter;
+import com.adapter.ViewPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.List;
 public class GuideActivity extends Activity {
     ViewPager viewPager;
     List<View> arraylist;
-    TextView tv_getlogin;
+    TextView tvgetlogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +27,9 @@ public class GuideActivity extends Activity {
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         LayoutInflater layoutInflater = LayoutInflater.from(this);
-        View view = layoutInflater.inflate(R.layout.activity_guidepage_one, null);
-        View view1 = layoutInflater.inflate(R.layout.activity_guidepage_tow, null);
-        View view2 = layoutInflater.inflate(R.layout.activity_guidepage_three, null);
+        View view = layoutInflater.inflate(R.layout.viewpager_guidepage_one, null);
+        View view1 = layoutInflater.inflate(R.layout.viewpager_guidepage_two, null);
+        View view2 = layoutInflater.inflate(R.layout.viewpager_guidepage_three, null);
         arraylist = new ArrayList<View>();
         arraylist.add(view);
         arraylist.add(view1);
@@ -38,11 +38,11 @@ public class GuideActivity extends Activity {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(arraylist);
         viewPager.setAdapter(viewPagerAdapter);
 
-        tv_getlogin = (TextView) view2.findViewById(R.id.tv_getlogin);
-        tv_getlogin.setOnClickListener(new View.OnClickListener() {
+        tvgetlogin = (TextView) view2.findViewById(R.id.tv_getlogin);
+        tvgetlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(GuideActivity.this, HomePageActivity.class);
+                Intent intent = new Intent(GuideActivity.this,HomePageLoginActivity.class);
                 startActivity(intent);
             }
         });

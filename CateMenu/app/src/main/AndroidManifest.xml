@@ -8,8 +8,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".GuideActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,6 +28,11 @@
         <activity android:name=".MineActivity"/>
         <activity android:name=".ChangePasswordActivity"/>
         <activity android:name=".PersonalSettingsActivity"/>
+        <activity android:name=".FoodDetailsActivity"/>
+        <activity android:name=".FoodPaymentDetailsActivity"/>
+        <activity android:name=".VideoActivity"/>
+        <activity android:name=".MenuFileActivity"/>
+        <activity android:name=".TasteSettingsActivity"/>
     </application>
 
 </manifest>

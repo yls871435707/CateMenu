@@ -16,7 +16,7 @@ public class HomepageFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-       View view= inflater.inflate(R.layout.viewpager_homepage,null);
+       View view= inflater.inflate(R.layout.fragment_homepage,null);
         return view;
     }
 }

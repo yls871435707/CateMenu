@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
 import com.fragment.ClassifyFragment;
+import com.fragment.FeastFragment;
 import com.fragment.HomepageFragment;
 import com.fragment.ShopFragment;
 
@@ -21,6 +22,7 @@ public class HomePageActivity extends Activity {
     HomepageFragment homepageFragment;
     ClassifyFragment classifyFragment;
     ShopFragment shopFragment;
+    FeastFragment feastFragment;
     LinearLayout linearLayout;
     RadioButton homepagerb;
     RadioButton classifyrb;
@@ -75,6 +77,10 @@ public class HomePageActivity extends Activity {
                     transaction.replace(R.id.ll,shopFragment);
                     break;
                 case R.id.rb_feast:
+                    if (feastFragment==null){
+                        feastFragment=new FeastFragment();
+                    }
+                    transaction.replace(R.id.ll,feastFragment);
                     break;
                 case R.id.rb_square:
                     break;

@@ -59,14 +59,15 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/ll"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
-    </LinearLayout>
+
+    </ScrollView>
+
+
 
 
     <LinearLayout
@@ -74,7 +75,8 @@
         android:layout_height="wrap_content"
         android:background="@color/yellow"
         android:paddingBottom="4dp"
-        android:paddingTop="10dp">
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -82,7 +84,6 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rb_homepage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -95,7 +96,6 @@
                 android:textSize="11sp" />
 
             <RadioButton
-                android:id="@+id/rb_classify"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -108,7 +108,6 @@
                 android:textSize="11sp" />
 
             <RadioButton
-                android:id="@+id/rb_shop"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -121,7 +120,6 @@
                 android:textSize="11sp" />
 
             <RadioButton
-                android:id="@+id/rb_feast"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -134,7 +132,6 @@
                 android:textSize="11sp" />
 
             <RadioButton
-                android:id="@+id/rb_square"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -142,11 +139,10 @@
                 android:drawablePadding="5dp"
                 android:drawableTop="@mipmap/square_false"
                 android:gravity="center_horizontal"
-                android:text="广场"
+                android:text="@string/square"
                 android:textColor="@drawable/homepage_checked_typeface_color"
                 android:textSize="11sp" />
 
         </RadioGroup>
     </LinearLayout>
-
 </LinearLayout>

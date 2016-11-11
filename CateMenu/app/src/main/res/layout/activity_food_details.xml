@@ -24,47 +24,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="#FFFFFF"
-                >
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="加入菜单"
-                    android:textColor="#BEBEBE"
-                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_menu"
                     android:gravity="center_vertical"
-                    android:drawableLeft="@mipmap/caidan"
-                    android:layout_marginLeft="24px"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    />
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@mipmap/huncai_banner_munu"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="收藏"
-                    android:textSize="20sp"
-                    android:textColor="#BEBEBE"
-                    android:drawableLeft="@mipmap/shoucang"
-                    android:drawablePadding="5dp"
-                    android:gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    />
+                    android:text="@string/collect"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="4dp"
+                    android:layout_marginRight="8dp"
+                    android:drawableLeft="@mipmap/collect"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="推荐"
-                    android:textSize="20sp"
-                    android:textColor="#BEBEBE"
-                    android:drawableLeft="@mipmap/tuijian"
-                    android:drawablePadding="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    />
+                    android:text="@string/collect"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="4dp"
+                    android:drawableLeft="@mipmap/zan"/>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"

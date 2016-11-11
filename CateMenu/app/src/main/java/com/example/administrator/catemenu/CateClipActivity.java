@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * Created by Administrator on 2016/11/9.
+ * Created by abc on 2016/11/11.
  */
-public class MenuFileActivity extends Activity {
+public class CateClipActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

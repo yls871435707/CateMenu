@@ -4,12 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * Created by Administrator on 2016/11/9.
+ * Created by Administrator on 2016/11/7.
  */
-public class MenuFileActivity extends Activity {
+public class FoodOrderDetailsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cate_clip);
+        setContentView(R.layout.activity_food_order_details);
     }
 }

@@ -4,12 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * Created by Administrator on 2016/11/7.
+ * Created by abc on 2016/11/11.
  */
-public class MainShiXinActivity extends Activity {
+public class WeekOrderActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mine_sixin);
+        setContentView(R.layout.activity_week_order);
     }
 }

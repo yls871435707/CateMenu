@@ -19,7 +19,7 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".HomePageActivity"/>
         <activity android:name=".RegisterActivity"/>
-        <activity android:name=".MainShiXinActivity"/>
+        <activity android:name=".MinePrivateLetterActivity"/>
         <activity android:name=".LoginThirdpartActivity"/>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".GuidepageLoginActivity"/>
@@ -28,7 +28,7 @@
         <activity android:name=".MineActivity"/>
         <activity android:name=".ChangePasswordActivity"/>
         <activity android:name=".PersonalSettingsActivity"/>
-        <activity android:name=".FoodDetailsActivity"/>
+        <activity android:name=".FoodOrderDetailsActivity"/>
         <activity android:name=".FoodPaymentDetailsActivity"/>
         <activity android:name=".VideoActivity"/>
         <activity android:name=".MenuFileActivity"/>

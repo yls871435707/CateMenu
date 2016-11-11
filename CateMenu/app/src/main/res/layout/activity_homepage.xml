@@ -57,17 +57,32 @@
             android:layout_marginTop="11dp"
             android:src="@mipmap/menu" />
     </LinearLayout>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4da4f3c40f47e2256acda0f3d2990f8dffd3d992
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+<<<<<<< HEAD
         <!--<fragment
             android:id="@+id/homepage_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"></fragment>-->
     </ScrollView>
 
+=======
+        <!--<fragment-->
+        <!--android:id="@+id/homepage_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--</fragment>-->
+    </ScrollView>
+
+
+>>>>>>> 4da4f3c40f47e2256acda0f3d2990f8dffd3d992
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -137,10 +152,18 @@
                 android:drawablePadding="5dp"
                 android:drawableTop="@mipmap/square_false"
                 android:gravity="center_horizontal"
+<<<<<<< HEAD
                 android:text="@string/square"
+=======
+                android:text="广场"
+>>>>>>> 4da4f3c40f47e2256acda0f3d2990f8dffd3d992
                 android:textColor="@drawable/homepage_checked_typeface_color"
                 android:textSize="11sp" />
 
         </RadioGroup>
     </LinearLayout>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4da4f3c40f47e2256acda0f3d2990f8dffd3d992
 </LinearLayout>

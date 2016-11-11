@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical">
 
     <LinearLayout
@@ -55,199 +57,86 @@
             android:layout_marginTop="11dp"
             android:src="@mipmap/menu" />
     </LinearLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1">
-    <LinearLayout
-        android:orientation="vertical"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
-
-            <android.support.v4.view.ViewPager
-                android:background="@mipmap/banner"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+            <fragment
+                android:id="@+id/homepage_fragment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
+                android:layout_height="match_parent">
+            </fragment>
+    </ScrollView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/breakfist_btn_bg"
-                android:drawableLeft="@mipmap/breakfast"
-                android:drawablePadding="6dp"
-                android:gravity="center"
-                android:paddingBottom="12dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="26dp"
-                android:paddingTop="12dp"
-                android:text="早餐 均衡营养"
-                android:textColor="@android:color/white"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/lunch_btn_bg"
-                android:drawableLeft="@mipmap/lunch"
-                android:drawablePadding="6dp"
-                android:gravity="center"
-                android:paddingBottom="12dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="26dp"
-                android:paddingTop="12dp"
-                android:text="午餐 能量充沛"
-
-                android:textSize="12sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/lunch_btn_bg"
-                android:drawableLeft="@mipmap/dessert"
-                android:drawablePadding="6dp"
-                android:gravity="center"
-                android:paddingBottom="12dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="26dp"
-                android:paddingTop="12dp"
-                android:text="点心 愉悦身心"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/lunch_btn_bg"
-                android:drawableLeft="@mipmap/dinner"
-                android:drawablePadding="6dp"
-                android:gravity="center"
-                android:paddingBottom="12dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="26dp"
-                android:paddingTop="12dp"
-                android:text="晚餐 温馨幸福"
-
-                android:textSize="12sp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:src="@mipmap/day_recommend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:src="@mipmap/ranking"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:src="@mipmap/day_recommend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </LinearLayout>
-
-</ScrollView>
-    <LinearLayout
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/yellow"
+        android:orientation="horizontal"
 
-        android:paddingTop="10dp"
-        android:paddingBottom="4dp">
-        <TextView
+        android:paddingBottom="4dp"
+        android:paddingTop="10dp">
+
+        <RadioButton
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/homepage_checked_homepge"
+            android:gravity="center_horizontal"
             android:text="@string/homepage"
-            android:gravity="center"
-            android:textSize="11sp"
-            android:drawableTop="@mipmap/homepage"
-            android:drawablePadding="5dp"/>
-        <TextView
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/homepage_checked_classify"
+            android:gravity="center_horizontal"
             android:text="@string/classify"
-            android:gravity="center"
-            android:textSize="11sp"
-            android:drawableTop="@mipmap/classify"
-            android:drawablePadding="5dp"/>
-        <TextView
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/shop_false"
+            android:gravity="center_horizontal"
             android:text="@string/shop"
-            android:gravity="center"
-            android:textSize="11sp"
-            android:drawableTop="@mipmap/shop"
-            android:drawablePadding="5dp"/>
-        <TextView
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/homepage_checked_feast"
+            android:gravity="center_horizontal"
             android:text="@string/yanhui"
-            android:gravity="center"
-            android:drawableTop="@mipmap/yanhui"
-            android:textSize="11sp"
-            android:drawablePadding="5dp"/>
-        <TextView
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/square_false"
+            android:gravity="center_horizontal"
             android:text="@string/square"
-            android:gravity="center"
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
 
-            android:textSize="11sp"
-            android:drawableTop="@mipmap/square"
-            android:drawablePadding="5dp"/>
-
-    </LinearLayout>
+    </RadioGroup>
 </LinearLayout>

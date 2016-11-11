@@ -64,7 +64,7 @@
             android:text="@string/homepage"
             android:gravity="center"
             android:textSize="11sp"
-            android:drawableTop="@mipmap/homepage"
+            android:drawableTop="@mipmap/homepage_false"
             android:drawablePadding="5dp"/>
         <TextView
             android:layout_width="0dp"
@@ -73,7 +73,7 @@
             android:text="@string/classify"
             android:gravity="center"
             android:textSize="11sp"
-            android:drawableTop="@mipmap/classify"
+            android:drawableTop="@mipmap/classify_true"
             android:drawablePadding="5dp"/>
         <TextView
             android:layout_width="0dp"
@@ -82,7 +82,7 @@
             android:text="@string/shop"
             android:gravity="center"
             android:textSize="11sp"
-            android:drawableTop="@mipmap/shop"
+            android:drawableTop="@mipmap/shop_false"
             android:drawablePadding="5dp"/>
         <TextView
             android:layout_width="0dp"
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:text="@string/yanhui"
             android:gravity="center"
-            android:drawableTop="@mipmap/yanhui"
+            android:drawableTop="@mipmap/feast_false"
             android:textSize="11sp"
             android:drawablePadding="5dp"/>
         <TextView
@@ -100,7 +100,7 @@
             android:text="@string/square"
             android:gravity="center"
             android:textSize="11sp"
-            android:drawableTop="@mipmap/square"
+            android:drawableTop="@mipmap/square_false"
             android:drawablePadding="5dp"/>
 
     </LinearLayout>

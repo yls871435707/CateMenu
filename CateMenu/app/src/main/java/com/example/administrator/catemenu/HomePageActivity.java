@@ -14,7 +14,10 @@ public class HomePageActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+<<<<<<< HEAD
         fragment=findViewById(R.id.fragment);
+=======
+>>>>>>> f8133fd29b8f4490624ea48b8355d9c110c81cee
 
     }
 }

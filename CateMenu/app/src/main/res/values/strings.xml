@@ -36,5 +36,6 @@
     <string name="start_order">开始排序</string>
     <string name="bzph">本周排行</string>
     <string name="jrtj">今日推荐</string>
+    <string name="my_order">我的订单</string>
 
 </resources>

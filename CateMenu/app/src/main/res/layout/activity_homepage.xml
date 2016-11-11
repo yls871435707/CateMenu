@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical">
 
     <LinearLayout
@@ -55,6 +57,28 @@
             android:layout_marginTop="11dp"
             android:src="@mipmap/menu" />
     </LinearLayout>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+            <fragment
+                android:id="@+id/homepage_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </fragment>
+    </ScrollView>
+
+    <RadioGroup
+=======
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+>>>>>>> f8133fd29b8f4490624ea48b8355d9c110c81cee
 
     <ScrollView
         android:layout_width="match_parent"
@@ -69,6 +93,7 @@
     </ScrollView>
 
     <LinearLayout
+>>>>>>> master
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/yellow"
@@ -77,6 +102,7 @@
         android:paddingBottom="4dp"
         android:paddingTop="10dp">
 
+<<<<<<< HEAD
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -129,4 +155,67 @@
             android:textSize="11sp" />
 
     </LinearLayout>
+=======
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/homepage_checked_homepge"
+            android:gravity="center_horizontal"
+            android:text="@string/homepage"
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/homepage_checked_classify"
+            android:gravity="center_horizontal"
+            android:text="@string/classify"
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/shop_false"
+            android:gravity="center_horizontal"
+            android:text="@string/shop"
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/homepage_checked_feast"
+            android:gravity="center_horizontal"
+            android:text="@string/yanhui"
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/square_false"
+            android:gravity="center_horizontal"
+            android:text="@string/square"
+            android:textColor="@drawable/homepage_checked_typeface_color"
+            android:textSize="11sp" />
+
+    </RadioGroup>
+>>>>>>> f8133fd29b8f4490624ea48b8355d9c110c81cee
 </LinearLayout>

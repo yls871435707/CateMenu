@@ -24,7 +24,6 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".GuidepageLoginActivity"/>
         <activity android:name=".FeedBackActivity"/>
-        <activity android:name=".ClassifyActivity"/>
         <activity android:name=".MineActivity"/>
         <activity android:name=".ChangePasswordActivity"/>
         <activity android:name=".PersonalSettingsActivity"/>

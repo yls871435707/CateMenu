@@ -11,41 +11,48 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <TextView
+                <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@null"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="讨论"
+                    android:textColor="@drawable/shopfragment_radiobutton_color"
                     android:textSize="18sp" />
 
 
-                <TextView
+
+                <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@null"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="视频"
+                    android:textColor="@drawable/shopfragment_radiobutton_color"
                     android:textSize="18sp" />
 
-
-                <TextView
+                <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@null"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="发布"
+                    android:textColor="@drawable/shopfragment_radiobutton_color"
                     android:textSize="18sp" />
 
 
-            </LinearLayout>
+            </RadioGroup>
 
             <View
                 android:layout_width="match_parent"

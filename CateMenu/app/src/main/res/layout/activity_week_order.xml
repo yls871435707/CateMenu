@@ -29,93 +29,108 @@
             android:src="@mipmap/head"/>
     </LinearLayout>
 
-    <LinearLayout
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/breakfist_btn_bg"
-            android:drawableLeft="@mipmap/breakfast"
-            android:drawablePadding="6dp"
-            android:gravity="center"
-            android:paddingBottom="12dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="26dp"
-            android:paddingTop="12dp"
-            android:text="早餐 均衡营养"
-            android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0dp"
+            <RadioButton
+                android:id="@+id/btn_breakfast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/homepage_radiobutton_bg"
+                android:button="@null"
+                android:drawableLeft="@mipmap/breakfast"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="26dp"
+                android:paddingTop="12dp"
+                android:text="早餐 均衡营养"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btn_lunch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/homepage_radiobutton_bg"
+                android:button="@null"
+                android:drawableLeft="@mipmap/lunch"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="26dp"
+                android:paddingTop="12dp"
+                android:text="午餐 能量充沛"
+
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/lunch_btn_bg"
-            android:drawableLeft="@mipmap/lunch"
-            android:drawablePadding="6dp"
-            android:gravity="center"
-            android:paddingBottom="12dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="26dp"
-            android:paddingTop="12dp"
-            android:text="午餐 能量充沛"
+            android:orientation="horizontal">
 
-            android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/btn_dessert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/homepage_radiobutton_bg"
+                android:button="@null"
+                android:drawableLeft="@mipmap/dessert"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="26dp"
+                android:paddingTop="12dp"
+                android:text="点心 愉悦身心"
+                android:textSize="12sp" />
 
-    </LinearLayout>
+            <RadioButton
+                android:id="@+id/btn_dinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/homepage_radiobutton_bg"
+                android:button="@null"
+                android:drawableLeft="@mipmap/dinner"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="26dp"
+                android:paddingTop="12dp"
+                android:text="晚餐 温馨幸福"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                android:textSize="12sp" />
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/lunch_btn_bg"
-            android:drawableLeft="@mipmap/dessert"
-            android:drawablePadding="6dp"
-            android:gravity="center"
-            android:paddingBottom="12dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="26dp"
-            android:paddingTop="12dp"
-            android:text="点心 愉悦身心"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/lunch_btn_bg"
-            android:drawableLeft="@mipmap/dinner"
-            android:drawablePadding="6dp"
-            android:gravity="center"
-            android:paddingBottom="12dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="26dp"
-            android:paddingTop="12dp"
-            android:text="晚餐 温馨幸福"
-            android:textSize="12sp" />
-
-    </LinearLayout>
+        </LinearLayout>
+    </RadioGroup>
     <ListView
         android:id="@+id/bzph_listview"
         android:layout_width="match_parent"

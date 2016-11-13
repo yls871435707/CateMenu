@@ -13,17 +13,20 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <TextView
+                <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@null"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="厨具"
+                    android:textColor="@drawable/shopfragment_radiobutton_color"
                     android:textSize="18sp" />
 
                 <View
@@ -31,13 +34,15 @@
                     android:layout_height="match_parent"
                     android:background="#C9C9C9" />
 
-                <TextView
+                <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@null"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="餐具"
+                    android:textColor="@drawable/shopfragment_radiobutton_color"
                     android:textSize="18sp" />
 
                 <View
@@ -45,26 +50,29 @@
                     android:layout_height="match_parent"
                     android:background="#C9C9C9" />
 
-                <TextView
+                <RadioButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@null"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="调料"
+                    android:textColor="@drawable/shopfragment_radiobutton_color"
                     android:textSize="18sp" />
 
 
-            </LinearLayout>
+            </RadioGroup>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#C9C9C9" />
+
             <ListView
                 android:id="@+id/listview"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 

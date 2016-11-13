@@ -14,6 +14,7 @@ import com.fragment.ClassifyFragment;
 import com.fragment.FeastFragment;
 import com.fragment.HomepageFragment;
 import com.fragment.ShopFragment;
+import com.fragment.SquareFragment;
 
 /**
  * Created by Administrator on 2016/10/20.
@@ -23,6 +24,7 @@ public class HomePageActivity extends Activity {
     ClassifyFragment classifyFragment;
     ShopFragment shopFragment;
     FeastFragment feastFragment;
+    SquareFragment squareFragment;
     LinearLayout linearLayout;
     RadioButton homepagerb;
     RadioButton classifyrb;
@@ -83,6 +85,10 @@ public class HomePageActivity extends Activity {
                     transaction.replace(R.id.ll,feastFragment);
                     break;
                 case R.id.rb_square:
+                    if(squareFragment==null){
+                        squareFragment=new SquareFragment();
+                    }
+                    transaction.replace(R.id.ll,squareFragment);
                     break;
             }
             transaction.commit();

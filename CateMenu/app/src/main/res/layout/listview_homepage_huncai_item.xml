@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="@string/scan"/>
+                android:text="@string/tuijian"/>
             <TextView
                 android:id="@+id/huncai_tuijian_numb_textview"
                 android:layout_width="0dp"
@@ -81,7 +81,7 @@
                 android:textSize="15sp"
                 android:text="@string/time_lenghth"/>
             <TextView
-                android:id="@+id/huncai_time_lenghth_textview"
+                android:id="@+id/huncai_time_textview"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -93,6 +93,7 @@
             android:layout_height="wrap_content"
             android:text="@string/introduce"/>
         <TextView
+            android:id="@+id/content_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingRight="10dp"

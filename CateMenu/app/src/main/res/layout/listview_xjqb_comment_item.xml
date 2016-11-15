@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:paddingTop="10dp"
-    android:paddingLeft="10dp">
+    android:paddingLeft="10dp"
+    android:gravity="center_vertical">
     <ImageView
+        android:id="@+id/head_imageview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/xjqbhead1"/>
@@ -21,11 +23,13 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
             <TextView
+                android:id="@+id/name_texttview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="赵阿狗"
                 android:layout_marginRight="10dp"/>
             <TextView
+                android:id="@+id/data_textview"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -38,6 +42,7 @@
                 android:drawableLeft="@mipmap/xjqb_comment_zan"/>
         </LinearLayout>
         <TextView
+            android:id="@+id/content_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingRight="100dp"

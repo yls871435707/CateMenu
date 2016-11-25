@@ -7,27 +7,27 @@ import android.view.View;
 import android.widget.ImageView;
 
 /**
- * Created by Administrator on 2016/11/7.
+ * Created by abc on 2016/11/25.
  */
-public class MinePrivateLetterActivity extends Activity {
-    ImageView siXinBackBtn;
+public class AttentionActivity extends Activity {
+    ImageView backBtn;
     Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mine_private_letter);
+        setContentView(R.layout.activity_attention);
 
-        siXinBackBtn = (ImageView) findViewById(R.id.sixin_back_btn);
-        siXinBackBtn.setOnClickListener(clickListener);
+        backBtn = (ImageView) findViewById(R.id.back_btn);
+        backBtn.setOnClickListener(clickListener);
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.sixin_back_btn:
-                    intent = new Intent(MinePrivateLetterActivity.this,MineActivity.class);
+                case R.id.back_btn:
+                    intent = new Intent(AttentionActivity.this,MineActivity.class);
                     startActivity(intent);
                     break;
             }

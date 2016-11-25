@@ -5,8 +5,10 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
@@ -31,22 +33,32 @@ public class HomePageActivity extends Activity {
     RadioButton shoprb;
     RadioButton feastrb;
     RadioButton squarerb;
+    ImageView moreImgview;
+    ImageView headImageview;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
         linearLayout = (LinearLayout) findViewById(R.id.ll);
         homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
         classifyrb = (RadioButton) findViewById(R.id.rb_classify);
         shoprb = (RadioButton) findViewById(R.id.rb_shop);
         feastrb = (RadioButton) findViewById(R.id.rb_feast);
         squarerb = (RadioButton) findViewById(R.id.rb_square);
+        moreImgview = (ImageView) findViewById(R.id.more_imgview);
+        headImageview = (ImageView) findViewById(R.id.head_imageview);
+
         homepagerb.setOnClickListener(clickListener);
         classifyrb.setOnClickListener(clickListener);
         shoprb.setOnClickListener(clickListener);
         feastrb.setOnClickListener(clickListener);
         squarerb.setOnClickListener(clickListener);
+        moreImgview.setOnClickListener(clickListener);
+        headImageview.setOnClickListener(clickListener);
+
 
         homepagerb.setChecked(true);
         if (homepagerb.isChecked()) {
@@ -89,6 +101,12 @@ public class HomePageActivity extends Activity {
                         squareFragment=new SquareFragment();
                     }
                     transaction.replace(R.id.ll,squareFragment);
+                    break;
+                case R.id.more_imgview:
+                    break;
+                case R.id.head_imageview:
+                    intent = new Intent(HomePageActivity.this,MineActivity.class);
+                    startActivity(intent);
                     break;
             }
             transaction.commit();

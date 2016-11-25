@@ -1,4 +1,4 @@
-package com.Adapter;
+package com.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -42,7 +42,7 @@ public class MeatItemAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if(view != null){
-            View view1 = layoutInflater.inflate(R.layout.listview_homepage_huncai_item,null);
+            view = layoutInflater.inflate(R.layout.listview_homepage_huncai_item,null);
         }
         return view;
     }

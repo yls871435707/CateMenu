@@ -26,32 +26,33 @@ public class HomePageActivity extends Activity {
     FeastFragment feastFragment;
     SquareFragment squareFragment;
     LinearLayout linearLayout;
-    RadioButton homepagerb;
-    RadioButton classifyrb;
-    RadioButton shoprb;
-    RadioButton feastrb;
-    RadioButton squarerb;
+    RadioButton homepageBtn;
+    RadioButton classifyBtn;
+    RadioButton shopBtn;
+    RadioButton feastBtn;
+    RadioButton squareBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
         linearLayout = (LinearLayout) findViewById(R.id.ll);
-        homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
-        classifyrb = (RadioButton) findViewById(R.id.rb_classify);
-        shoprb = (RadioButton) findViewById(R.id.rb_shop);
-        feastrb = (RadioButton) findViewById(R.id.rb_feast);
-        squarerb = (RadioButton) findViewById(R.id.rb_square);
+        homepageBtn = (RadioButton) findViewById(R.id.rb_homepage);
+        classifyBtn = (RadioButton) findViewById(R.id.rb_classify);
+        shopBtn = (RadioButton) findViewById(R.id.rb_shop);
+        feastBtn = (RadioButton) findViewById(R.id.rb_feast);
+        squareBtn = (RadioButton) findViewById(R.id.rb_square);
 
 
-        homepagerb.setOnClickListener(clickListener);
-        classifyrb.setOnClickListener(clickListener);
-        shoprb.setOnClickListener(clickListener);
-        feastrb.setOnClickListener(clickListener);
-        squarerb.setOnClickListener(clickListener);
+        homepageBtn.setOnClickListener(clickListener);
+        classifyBtn.setOnClickListener(clickListener);
+        shopBtn.setOnClickListener(clickListener);
+        feastBtn.setOnClickListener(clickListener);
+        squareBtn.setOnClickListener(clickListener);
 
-        homepagerb.setChecked(true);
-        if (homepagerb.isChecked()) {
+        homepageBtn.setChecked(true);
+        if (homepageBtn.isChecked()) {
             addHomepageFragment();
         }
     }

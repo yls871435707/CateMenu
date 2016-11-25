@@ -1,4 +1,4 @@
-package com.Adapter;
+package com.example.administrator.catemenu.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

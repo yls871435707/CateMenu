@@ -26,7 +26,7 @@
             android:textSize="50sp" />
     </LinearLayout>
 
-    <TextView
+    <Button
         android:id="@+id/tv_login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,12 +37,13 @@
         android:paddingBottom="6dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:gravity="center"
         android:paddingTop="6dp"
         android:text="登录"
         android:textColor="@android:color/white"
         android:textSize="18dp" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

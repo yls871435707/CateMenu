@@ -4,8 +4,10 @@ import android.app.Activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
@@ -26,11 +28,22 @@ public class HomePageActivity extends Activity {
     FeastFragment feastFragment;
     SquareFragment squareFragment;
     LinearLayout linearLayout;
+<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/activity/HomePageActivity.java
     RadioButton homepageBtn;
     RadioButton classifyBtn;
     RadioButton shopBtn;
     RadioButton feastBtn;
     RadioButton squareBtn;
+=======
+    RadioButton homepagerb;
+    RadioButton classifyrb;
+    RadioButton shoprb;
+    RadioButton feastrb;
+    RadioButton squarerb;
+    ImageView moreImgview;
+    ImageView headImageview;
+    Intent intent;
+>>>>>>> hkl:CateMenu/app/src/main/java/com/example/administrator/catemenu/HomePageActivity.java
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +51,7 @@ public class HomePageActivity extends Activity {
         setContentView(R.layout.activity_homepage);
 
         linearLayout = (LinearLayout) findViewById(R.id.ll);
+<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/activity/HomePageActivity.java
         homepageBtn = (RadioButton) findViewById(R.id.rb_homepage);
         classifyBtn = (RadioButton) findViewById(R.id.rb_classify);
         shopBtn = (RadioButton) findViewById(R.id.rb_shop);
@@ -50,6 +64,24 @@ public class HomePageActivity extends Activity {
         shopBtn.setOnClickListener(clickListener);
         feastBtn.setOnClickListener(clickListener);
         squareBtn.setOnClickListener(clickListener);
+=======
+        homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
+        classifyrb = (RadioButton) findViewById(R.id.rb_classify);
+        shoprb = (RadioButton) findViewById(R.id.rb_shop);
+        feastrb = (RadioButton) findViewById(R.id.rb_feast);
+        squarerb = (RadioButton) findViewById(R.id.rb_square);
+        moreImgview = (ImageView) findViewById(R.id.more_imgview);
+        headImageview = (ImageView) findViewById(R.id.head_imageview);
+
+        homepagerb.setOnClickListener(clickListener);
+        classifyrb.setOnClickListener(clickListener);
+        shoprb.setOnClickListener(clickListener);
+        feastrb.setOnClickListener(clickListener);
+        squarerb.setOnClickListener(clickListener);
+        moreImgview.setOnClickListener(clickListener);
+        headImageview.setOnClickListener(clickListener);
+
+>>>>>>> hkl:CateMenu/app/src/main/java/com/example/administrator/catemenu/HomePageActivity.java
 
         homepageBtn.setChecked(true);
         if (homepageBtn.isChecked()) {
@@ -92,6 +124,12 @@ public class HomePageActivity extends Activity {
                         squareFragment=new SquareFragment();
                     }
                     transaction.replace(R.id.ll,squareFragment);
+                    break;
+                case R.id.more_imgview:
+                    break;
+                case R.id.head_imageview:
+                    intent = new Intent(HomePageActivity.this,MineActivity.class);
+                    startActivity(intent);
                     break;
             }
             transaction.commit();

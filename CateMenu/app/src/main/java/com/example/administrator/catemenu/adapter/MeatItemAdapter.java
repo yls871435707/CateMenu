@@ -1,4 +1,8 @@
+<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/adapter/MeatItemAdapter.java
 package com.example.administrator.catemenu.adapter;
+=======
+package com.adapter;
+>>>>>>> hkl:CateMenu/app/src/main/java/com/Adapter/MeatItemAdapter.java
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -42,7 +46,7 @@ public class MeatItemAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if(view != null){
-            View view1 = layoutInflater.inflate(R.layout.listview_homepage_huncai_item,null);
+            view = layoutInflater.inflate(R.layout.listview_homepage_huncai_item,null);
         }
         return view;
     }

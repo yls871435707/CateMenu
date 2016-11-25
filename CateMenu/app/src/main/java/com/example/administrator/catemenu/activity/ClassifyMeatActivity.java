@@ -4,10 +4,15 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/activity/ClassifyMeatActivity.java
 
 import com.example.administrator.catemenu.R;
 import com.example.administrator.catemenu.adapter.MeatItemAdapter;
 import com.example.administrator.catemenu.modle.MeatItem;
+=======
+import com.adapter.MeatItemAdapter;
+import com.modle.MeatItem;
+>>>>>>> hkl:CateMenu/app/src/main/java/com/example/administrator/catemenu/ClassifyMeatActivity.java
 
 import java.util.ArrayList;
 import java.util.List;

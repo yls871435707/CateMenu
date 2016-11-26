@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.administrator.catemenu.activity.MineActivity;
+
 /**
  * Created by abc on 2016/11/25.
  */

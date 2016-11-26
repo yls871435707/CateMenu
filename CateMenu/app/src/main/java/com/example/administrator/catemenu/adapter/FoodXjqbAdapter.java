@@ -1,8 +1,4 @@
-<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/adapter/FoodXjqbAdapter.java
 package com.example.administrator.catemenu.adapter;
-=======
-package com.adapter;
->>>>>>> hkl:CateMenu/app/src/main/java/com/Adapter/FoodXjqbAdapter.java
 
 import android.content.Context;
 import android.view.LayoutInflater;

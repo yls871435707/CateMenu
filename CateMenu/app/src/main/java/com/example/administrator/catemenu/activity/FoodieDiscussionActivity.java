@@ -4,15 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/activity/FoodieDiscussionActivity.java
+
 
 import com.example.administrator.catemenu.R;
 import com.example.administrator.catemenu.adapter.FoodXjqbAdapter;
 import com.example.administrator.catemenu.modle.FoodXjqb;
-=======
-import com.adapter.FoodXjqbAdapter;
-import com.modle.FoodXjqb;
->>>>>>> hkl:CateMenu/app/src/main/java/com/example/administrator/catemenu/FoodieDiscussionActivity.java
+
 
 import java.util.ArrayList;
 import java.util.List;

@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.MyApplication;
 
+import com.example.administrator.catemenu.AttentionActivity;
 import com.example.administrator.catemenu.R;
 
 /**

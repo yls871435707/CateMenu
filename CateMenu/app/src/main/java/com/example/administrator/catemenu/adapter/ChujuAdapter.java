@@ -1,4 +1,4 @@
-package com.adapter;
+package com.example.administrator.catemenu.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,19 +9,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.administrator.catemenu.R;
-import com.modle.Canju;
+import com.example.administrator.catemenu.modle.Chuju;
 
 import java.util.List;
 
 /**
- * Created by Administrator on 2016/11/25.
+ * Created by Administrator on 2016/11/27.
  */
-public class CanjuAdapter extends BaseAdapter {
+public class ChujuAdapter extends BaseAdapter {
     Context context;
-    List<Canju> list;
+    List<Chuju> list;
     LayoutInflater layoutInflater;
 
-    public CanjuAdapter(Context context, List<Canju> list) {
+    public ChujuAdapter(Context context, List<Chuju> list) {
         this.context = context;
         this.list = list;
         layoutInflater = LayoutInflater.from(context);
@@ -45,16 +45,15 @@ public class CanjuAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView==null){
-            convertView = layoutInflater.inflate(R.layout.supermarket_canju_item_layout,null);
+            convertView=layoutInflater.inflate(R.layout.supermarket_chuju_item_layout,null);
         }
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.canju1_imageview);
-        TextView textView = (TextView) convertView.findViewById(R.id.canju1_name);
-        TextView textView1 = (TextView) convertView.findViewById(R.id.canju1_price);
-        Canju canju = list.get(position);
-        imageView.setImageResource(canju.getImage());
-        textView.setText(canju.getName());
-        textView1.setText(canju.getPrivace());
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.chuju_imageview);
+        TextView textViewName = (TextView) convertView.findViewById(R.id.chuju_name);
+        TextView textViewPrice = (TextView) convertView.findViewById(R.id.chuju_price);
+        Chuju chuju = list.get(position);
+        imageView.setImageResource(chuju.getImage());
+        textViewName.setText(chuju.getName());
+        textViewPrice.setText(chuju.getPrivace());
         return convertView;
     }
-
 }

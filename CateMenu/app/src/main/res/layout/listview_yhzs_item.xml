@@ -7,6 +7,7 @@
     android:layout_margin="4dp"
     android:background="@drawable/yhzs_listview_item_shape">
     <ImageView
+        android:id="@+id/head_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/people"/>
@@ -17,6 +18,7 @@
         android:padding="10dp"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/name_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/caidanfangan"
@@ -38,11 +40,12 @@
                     android:text="采纳:"
                     android:textColor="@android:color/black"/>
                 <TextView
+                    android:id="@+id/caina_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1852"
                     android:textColor="@color/yellow"
-                    android:textSize="18sp"/>
+                    android:textSize="16sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -52,14 +55,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="推荐:"
+                    android:text="@string/tuijian"
                     android:textColor="@android:color/black"/>
                 <TextView
+                    android:id="@+id/tuijian_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1852"
                     android:textColor="@color/yellow"
-                    android:textSize="18sp"/>
+                    android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -75,13 +79,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="采纳:"
+                    android:text="@string/nandu"
                     android:textColor="@android:color/black"/>
                 <TextView
+                    android:id="@+id/nandu_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="中级"
-                    android:textSize="18sp"/>
+                    android:textSize="16sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -91,13 +96,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="推荐:"
+                    android:text="时长："
                     android:textColor="@android:color/black"/>
                 <TextView
+                    android:id="@+id/time_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="120分钟"
-                    android:textSize="18sp"/>
+                    android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout

@@ -1,14 +1,6 @@
-<<<<<<< HEAD:CateMenu/app/src/main/java/com/Adapter/MeatItemAdapter.java
-package com.adapter;
-=======
 package com.example.administrator.catemenu.adapter;
-<<<<<<< HEAD
-=======
->>>>>>> df0f1907e266e625386acc3cff01f76cabb3645b:CateMenu/app/src/main/java/com/example/administrator/catemenu/adapter/MeatItemAdapter.java
 
-import android.widget.BaseAdapter;
->>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
-
+import com.example.administrator.catemenu.activity.ClassifyMeatActivity;
 import android.widget.BaseAdapter;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -27,7 +19,7 @@ public class MeatItemAdapter extends BaseAdapter {
     Context context;
     List<MeatItem> meatItemList;
     LayoutInflater layoutInflater;
-    public MeatItemAdapter(Context context, List<MeatItem> meatItemList) {
+    public MeatItemAdapter(ClassifyMeatActivity context, List<MeatItem> meatItemList) {
         this.context = context;
         this.meatItemList = meatItemList;
         layoutInflater = LayoutInflater.from(context);

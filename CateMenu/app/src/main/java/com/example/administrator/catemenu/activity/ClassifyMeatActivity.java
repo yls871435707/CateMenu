@@ -3,12 +3,12 @@ package com.example.administrator.catemenu.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
-<<<<<<< HEAD
 import com.example.administrator.catemenu.R;
 import com.example.administrator.catemenu.adapter.MeatItemAdapter;
 import com.example.administrator.catemenu.modle.MeatItem;
-=======
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/ClassifyMeatActivity.java
 import com.adapter.MeatItemAdapter;
 import com.modle.MeatItem;
@@ -20,6 +20,7 @@ import com.example.administrator.catemenu.modle.MeatItem;
 
 
 >>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
+>>>>>>> 6aa24cba313f08e139c28195f2c312d35811780b
 import java.util.ArrayList;
 import java.util.List;
 

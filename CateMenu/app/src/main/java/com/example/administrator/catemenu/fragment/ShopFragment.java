@@ -1,6 +1,5 @@
 package com.example.administrator.catemenu.fragment;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -9,12 +8,10 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.example.administrator.catemenu.R;
-import com.modle.Chuju;
 
 /**
  * Created by Administrator on 2016/11/11.

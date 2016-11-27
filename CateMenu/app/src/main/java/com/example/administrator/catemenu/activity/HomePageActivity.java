@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
@@ -36,7 +37,6 @@ public class HomePageActivity extends Activity {
     RadioButton shopBtn;
     RadioButton feastBtn;
     RadioButton squareBtn;
-<<<<<<< HEAD
     RadioButton homepagerb;
     RadioButton classifyrb;
     RadioButton shoprb;
@@ -45,15 +45,9 @@ public class HomePageActivity extends Activity {
     ImageView moreImgview;
     ImageView headImageview;
     ImageView searchImg;
-    Intent intent;
     LayoutInflater layoutInflater;
     PopupWindow popupWindow;
-=======
-
-
     Intent intent;
-
->>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,16 +55,11 @@ public class HomePageActivity extends Activity {
         setContentView(R.layout.activity_homepage);
 
         linearLayout = (LinearLayout) findViewById(R.id.ll);
-<<<<<<< HEAD
-=======
-
->>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
         homepageBtn = (RadioButton) findViewById(R.id.rb_homepage);
         classifyBtn = (RadioButton) findViewById(R.id.rb_classify);
         shopBtn = (RadioButton) findViewById(R.id.rb_shop);
         feastBtn = (RadioButton) findViewById(R.id.rb_feast);
         squareBtn = (RadioButton) findViewById(R.id.rb_square);
-<<<<<<< HEAD
         searchImg = (ImageView) findViewById(R.id.search_img);
         homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
         classifyrb = (RadioButton) findViewById(R.id.rb_classify);
@@ -79,16 +68,12 @@ public class HomePageActivity extends Activity {
         squarerb = (RadioButton) findViewById(R.id.rb_square);
         moreImgview = (ImageView) findViewById(R.id.more_imgview);
         headImageview = (ImageView) findViewById(R.id.head_imageview);
-=======
-
->>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
 
         homepageBtn.setOnClickListener(clickListener);
         classifyBtn.setOnClickListener(clickListener);
         shopBtn.setOnClickListener(clickListener);
         feastBtn.setOnClickListener(clickListener);
         squareBtn.setOnClickListener(clickListener);
-<<<<<<< HEAD
         searchImg.setOnClickListener(clickListener);
         homepagerb.setOnClickListener(clickListener);
         classifyrb.setOnClickListener(clickListener);
@@ -97,9 +82,6 @@ public class HomePageActivity extends Activity {
         squarerb.setOnClickListener(clickListener);
         moreImgview.setOnClickListener(clickListener);
         headImageview.setOnClickListener(clickListener);
-=======
-
->>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
 
         homepageBtn.setChecked(true);
         if (homepageBtn.isChecked()) {
@@ -176,9 +158,10 @@ public class HomePageActivity extends Activity {
         View contentView = layoutInflater.inflate(R.layout.activity_popup_more,null);
         popupWindow = new PopupWindow(contentView);
         popupWindow.setOutsideTouchable(true);
+        popupWindow.setFocusable(true);
         popupWindow.setWidth(LinearLayout.LayoutParams.WRAP_CONTENT);
         popupWindow.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
-        popupWindow.setBackgroundDrawable(getResources().getDrawable(android.R.color.white));
+        popupWindow.setBackgroundDrawable(getResources().getDrawable(R.drawable.homepage_edittext_serch_shape));
         popupWindow.showAsDropDown(moreImgview,-180,10);
 
     }

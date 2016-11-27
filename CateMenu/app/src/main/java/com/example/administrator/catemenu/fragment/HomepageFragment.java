@@ -1,7 +1,8 @@
 package com.example.administrator.catemenu.fragment;
 
+import android.app.Activity;
 import android.app.Fragment;
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
@@ -9,9 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.catemenu.R;
-import com.example.administrator.catemenu.activity.HomePageActivity;
+import com.example.administrator.catemenu.activity.SeasonRecommendActivity;
+import com.example.administrator.catemenu.activity.TodayRecommendActivity;
+import com.example.administrator.catemenu.activity.WeekOrderActivity;
 
 import java.util.ArrayList;
 
@@ -24,6 +28,11 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
     RadioButton dinner;
     RadioButton lunch;
     ViewPager viewPager;
+    RelativeLayout todayRecommend;
+    RelativeLayout weekOrder;
+    RelativeLayout season;
+    Intent intent;
+    Activity activity;
 
     ArrayList<View> lists= new ArrayList<View>();
     @Nullable
@@ -35,20 +44,21 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
         dinner = (RadioButton) view.findViewById(R.id.btn_dinner);
         lunch = (RadioButton) view.findViewById(R.id.btn_lunch);
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
+        todayRecommend = (RelativeLayout) view.findViewById(R.id.today_recommend);
+        weekOrder = (RelativeLayout) view.findViewById(R.id.week_order);
+        season = (RelativeLayout) view.findViewById(R.id.season);
+        activity = getActivity();
 
         breakfast.setOnClickListener(this);
         desssert.setOnClickListener(this);
         dinner.setOnClickListener(this);
         lunch.setOnClickListener(this);
+        todayRecommend.setOnClickListener(this);
+        weekOrder.setOnClickListener(this);
+        season.setOnClickListener(this);
+
         return view;
-
-
-
     }
-
-
-
-
 
     @Override
     public void onClick(View v) {
@@ -80,6 +90,18 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
                     desssert.setChecked(false);
                     dinner.setChecked(false);
                 }
+                break;
+            case R.id.today_recommend:
+                intent = new Intent(activity, TodayRecommendActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.week_order:
+                intent = new Intent(activity, WeekOrderActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.season:
+                intent = new Intent(activity, SeasonRecommendActivity.class);
+                startActivity(intent);
                 break;
         }
     }

@@ -10,16 +10,16 @@ import com.example.administrator.catemenu.R;
 import com.example.administrator.catemenu.fragment.HomepageFragment;
 
 /**
- * Created by abc on 2016/11/11.
+ * Created by Administrator on 2016/11/26.
  */
-public class TodayRecommendActivity extends Activity {
+public class SeasonRecommendActivity extends Activity {
     ImageView backBtn;
     Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_today_recommend);
+        setContentView(R.layout.activity_season_recommend);
 
         backBtn = (ImageView) findViewById(R.id.back_btn);
         backBtn.setOnClickListener(clickListener);
@@ -30,8 +30,7 @@ public class TodayRecommendActivity extends Activity {
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.back_btn:
-                    intent = new Intent(TodayRecommendActivity.this,HomePageActivity.class);
-                    startActivity(intent);
+                    intent = new Intent(SeasonRecommendActivity.this, HomePageActivity.class);
                     break;
             }
         }

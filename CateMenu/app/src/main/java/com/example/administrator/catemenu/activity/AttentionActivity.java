@@ -1,4 +1,4 @@
-package com.example.administrator.catemenu;
+package com.example.administrator.catemenu.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.administrator.catemenu.R;
+
 /**
- * Created by abc on 2016/11/25.
+ * Created by Administrator on 2016/11/26.
  */
 public class AttentionActivity extends Activity {
     ImageView backBtn;
@@ -24,8 +26,8 @@ public class AttentionActivity extends Activity {
 
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
-        public void onClick(View v) {
-            switch (v.getId()){
+        public void onClick(View view) {
+            switch (view.getId()){
                 case R.id.back_btn:
                     intent = new Intent(AttentionActivity.this,MineActivity.class);
                     startActivity(intent);

@@ -9,19 +9,13 @@
         android:supportsRtl="true"
         android:name="com.MyApplication"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
         <activity android:name=".activity.GuideActivity">
-
-=======
-        <activity android:name=".GuideActivity">
->>>>>>> hkl
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.HomePageActivity"/>
         <activity android:name=".activity.RegisterActivity"/>
@@ -38,28 +32,15 @@
         <activity android:name=".activity.VideoActivity"/>
         <activity android:name=".activity.MenuFileActivity"/>
         <activity android:name=".activity.TasteSettingsActivity"/>
-=======
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".HomePageActivity"/>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".MinePrivateLetterActivity"/>
-        <activity android:name=".LoginThirdpartActivity"/>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".GuidepageLoginActivity"/>
-        <activity android:name=".FeedBackActivity"/>
-        <activity android:name=".MineActivity"/>
-        <activity android:name=".ChangePasswordActivity"/>
-        <activity android:name=".PersonalSettingsActivity"/>
-        <activity android:name=".FoodOrderDetailsActivity"/>
-        <activity android:name=".FoodPaymentDetailsActivity"/>
-        <activity android:name=".VideoActivity"/>
-        <activity android:name=".MenuFileActivity"/>
-        <activity android:name=".TasteSettingsActivity"/>
-        <activity android:name=".SigninActivity"/>
-        <activity android:name=".CollectActivity"/>
-        <activity android:name=".ShareActivity"/>
-        <activity android:name=".AttentionActivity"/>
->>>>>>> hkl
+        <activity android:name=".activity.SigninActivity"/>
+        <activity android:name=".activity.CollectActivity"/>
+        <activity android:name=".activity.ShareActivity"/>
+        <activity android:name=".activity.SeasonRecommendActivity"/>
+        <activity android:name=".activity.TodayRecommendActivity"/>
+        <activity android:name=".activity.WeekOrderActivity"/>
+        <activity android:name=".activity.AttentionActivity"/>
+        <activity android:name=".activity.SearchActivity"/>
+        
     </application>
 
 </manifest>

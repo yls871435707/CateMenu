@@ -4,34 +4,32 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.administrator.catemenu.R;
-import com.example.administrator.catemenu.fragment.HomepageFragment;
 
 /**
- * Created by abc on 2016/11/11.
+ * Created by Administrator on 2016/11/26.
  */
-public class TodayRecommendActivity extends Activity {
-    ImageView backBtn;
+public class SearchActivity extends Activity{
+    TextView cancleTv;
     Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_today_recommend);
+        setContentView(R.layout.activity_search);
 
-        backBtn = (ImageView) findViewById(R.id.back_btn);
-        backBtn.setOnClickListener(clickListener);
+        cancleTv = (TextView) findViewById(R.id.cancle_tv);
+        cancleTv.setOnClickListener(clickListener);
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             switch (view.getId()){
-                case R.id.back_btn:
-                    intent = new Intent(TodayRecommendActivity.this,HomePageActivity.class);
-                    startActivity(intent);
+                case R.id.cancle_tv:
+                    intent = new Intent(SearchActivity.this,HomePageActivity.class);
                     break;
             }
         }

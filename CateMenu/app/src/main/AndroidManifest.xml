@@ -12,7 +12,6 @@
 
         <activity android:name=".activity.GuideActivity">
 
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

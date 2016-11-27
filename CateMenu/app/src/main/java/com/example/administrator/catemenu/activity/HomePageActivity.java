@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
@@ -28,6 +29,7 @@ public class HomePageActivity extends Activity {
     FeastFragment feastFragment;
     SquareFragment squareFragment;
     LinearLayout linearLayout;
+    ImageView headimg;
     RadioButton homepageBtn;
     RadioButton classifyBtn;
     RadioButton shopBtn;
@@ -50,8 +52,10 @@ public class HomePageActivity extends Activity {
         shopBtn = (RadioButton) findViewById(R.id.rb_shop);
         feastBtn = (RadioButton) findViewById(R.id.rb_feast);
         squareBtn = (RadioButton) findViewById(R.id.rb_square);
+        headimg= (ImageView) findViewById(R.id.head_imageview);
 
 
+        headimg.setOnClickListener(clickListener);
         homepageBtn.setOnClickListener(clickListener);
         classifyBtn.setOnClickListener(clickListener);
         shopBtn.setOnClickListener(clickListener);
@@ -104,7 +108,7 @@ public class HomePageActivity extends Activity {
                 case R.id.more_imgview:
                     break;
                 case R.id.head_imageview:
-                    intent = new Intent(HomePageActivity.this,MineActivity.class);
+                    intent = new Intent(HomePageActivity.this,GuidepageLoginActivity.class);
                     startActivity(intent);
                     break;
             }

@@ -6,6 +6,24 @@ import android.widget.ListView;
 import com.example.administrator.catemenu.R;
 import com.example.administrator.catemenu.adapter.FoodXjqbAdapter;
 import com.example.administrator.catemenu.modle.FoodXjqb;
+<<<<<<< HEAD
+=======
+=======
+
+<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/FoodieDiscussionActivity.java
+import com.adapter.FoodXjqbAdapter;
+import com.modle.FoodXjqb;
+=======
+
+
+import com.example.administrator.catemenu.R;
+import com.example.administrator.catemenu.adapter.FoodXjqbAdapter;
+import com.example.administrator.catemenu.modle.FoodXjqb;
+
+>>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
+>>>>>>> df0f1907e266e625386acc3cff01f76cabb3645b:CateMenu/app/src/main/java/com/example/administrator/catemenu/activity/FoodieDiscussionActivity.java
+
+>>>>>>> 6aa24cba313f08e139c28195f2c312d35811780b
 import java.util.ArrayList;
 import java.util.List;
 

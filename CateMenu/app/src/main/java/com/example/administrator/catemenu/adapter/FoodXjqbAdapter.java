@@ -1,4 +1,8 @@
+<<<<<<< HEAD:CateMenu/app/src/main/java/com/Adapter/FoodXjqbAdapter.java
+package com.adapter;
+=======
 package com.example.administrator.catemenu.adapter;
+>>>>>>> df0f1907e266e625386acc3cff01f76cabb3645b:CateMenu/app/src/main/java/com/example/administrator/catemenu/adapter/FoodXjqbAdapter.java
 
 import android.content.Context;
 import android.view.LayoutInflater;

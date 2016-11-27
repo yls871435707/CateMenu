@@ -8,6 +8,10 @@
     <color name="red">#FE0000</color>
     <color name="gray_bg">#EEEEEE</color>
     <color name="gray_word">#B3B3B3</color>
+<<<<<<< HEAD
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+=======
 
 
 
@@ -21,4 +25,5 @@
     <color name="bright_black_color">#535353</color>
     <color name="Light_grey_color">#A7A7A7</color>
 
+>>>>>>> df0f1907e266e625386acc3cff01f76cabb3645b
 </resources>

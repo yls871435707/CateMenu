@@ -10,15 +10,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RadioGroup
+                android:id="@+id/shop_radioGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/chuju_radioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -35,6 +37,7 @@
                     android:background="#C9C9C9" />
 
                 <RadioButton
+                    android:id="@+id/canju_radioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -51,6 +54,7 @@
                     android:background="#C9C9C9" />
 
                 <RadioButton
+                    android:id="@+id/tiaoliao_radioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -69,10 +73,12 @@
                 android:layout_height="1dp"
                 android:background="#C9C9C9" />
 
-            <ListView
-                android:id="@+id/listview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+          <LinearLayout
+              android:id="@+id/shop_linearLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+          </LinearLayout>
 
         </LinearLayout>
 

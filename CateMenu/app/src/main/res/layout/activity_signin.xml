@@ -10,6 +10,7 @@
         android:background="@color/yellow">
 
         <ImageView
+            android:id="@+id/back_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -28,22 +29,20 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="200dp">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="182dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/headbackground" />
-
+            android:id="@+id/sixin_head_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/share"
+            android:scaleType="centerCrop"/>
         <ImageView
-            android:id="@+id/setting_head"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@mipmap/head_img"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
-            android:src="@mipmap/head_setting" />
-
+            android:layout_marginBottom="40dp"
+            android:layout_alignBottom="@+id/sixin_head_imageview"/>
     </RelativeLayout>
 
     <TextView

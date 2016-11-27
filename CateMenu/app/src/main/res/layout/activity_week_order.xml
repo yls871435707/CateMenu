@@ -4,30 +4,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/yellow"
-        android:padding="12dp"
-        android:gravity="center_vertical">
+        android:background="@color/yellow">
         <ImageView
+            android:id="@+id/back_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/back"/>
+            android:layout_alignParentLeft="true"
+            android:padding="11dp"
+            android:src="@mipmap/back" />
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/bzph"
-            android:textSize="23sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/week_order"
             android:textColor="@android:color/white"
-            android:gravity="center"/>
+            android:textSize="23sp" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/head"/>
-    </LinearLayout>
+            android:src="@mipmap/head"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
 
     <RadioGroup
         android:layout_width="match_parent"

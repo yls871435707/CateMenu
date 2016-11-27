@@ -97,17 +97,7 @@
                 android:background="@drawable/xjqb_btn_shape"
                 android:text="生日"
                 android:textColor="@color/yellow"/>
-            <RadioButton
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp"
-                android:button="@null"
-                android:background="@color/yellow"
-                android:textColor="@android:color/white"
-                android:text="节日"/>
+
         </RadioGroup>
     </LinearLayout>
     <ListView

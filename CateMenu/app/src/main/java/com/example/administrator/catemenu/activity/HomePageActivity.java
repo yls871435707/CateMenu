@@ -6,10 +6,13 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RadioButton;
 
 import com.example.administrator.catemenu.R;
@@ -35,10 +38,17 @@ public class HomePageActivity extends Activity {
     RadioButton shopBtn;
     RadioButton feastBtn;
     RadioButton squareBtn;
-
-
+    RadioButton homepagerb;
+    RadioButton classifyrb;
+    RadioButton shoprb;
+    RadioButton feastrb;
+    RadioButton squarerb;
+    ImageView moreImgview;
+    ImageView headImageview;
+    ImageView searchImgs;
+    LayoutInflater layoutInflater;
+    PopupWindow popupWindow;
     Intent intent;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,14 +56,24 @@ public class HomePageActivity extends Activity {
         setContentView(R.layout.activity_homepage);
 
         linearLayout = (LinearLayout) findViewById(R.id.ll);
-
         homepageBtn = (RadioButton) findViewById(R.id.rb_homepage);
         classifyBtn = (RadioButton) findViewById(R.id.rb_classify);
         shopBtn = (RadioButton) findViewById(R.id.rb_shop);
         feastBtn = (RadioButton) findViewById(R.id.rb_feast);
         squareBtn = (RadioButton) findViewById(R.id.rb_square);
+<<<<<<< HEAD
         headimg= (ImageView) findViewById(R.id.head_imageview);
 
+=======
+        searchImgs = (ImageView) findViewById(R.id.search_imgs);
+        homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
+        classifyrb = (RadioButton) findViewById(R.id.rb_classify);
+        shoprb = (RadioButton) findViewById(R.id.rb_shop);
+        feastrb = (RadioButton) findViewById(R.id.rb_feast);
+        squarerb = (RadioButton) findViewById(R.id.rb_square);
+        moreImgview = (ImageView) findViewById(R.id.more_imgview);
+        headImageview = (ImageView) findViewById(R.id.head_imageview);
+>>>>>>> e293c4a72a7e4b8d968c9a8cbf932bb5dd0d9de3
 
         headimg.setOnClickListener(clickListener);
         homepageBtn.setOnClickListener(clickListener);
@@ -61,7 +81,14 @@ public class HomePageActivity extends Activity {
         shopBtn.setOnClickListener(clickListener);
         feastBtn.setOnClickListener(clickListener);
         squareBtn.setOnClickListener(clickListener);
-
+        searchImgs.setOnClickListener(clickListener);
+        homepagerb.setOnClickListener(clickListener);
+        classifyrb.setOnClickListener(clickListener);
+        shoprb.setOnClickListener(clickListener);
+        feastrb.setOnClickListener(clickListener);
+        squarerb.setOnClickListener(clickListener);
+        moreImgview.setOnClickListener(clickListener);
+        headImageview.setOnClickListener(clickListener);
 
         homepageBtn.setChecked(true);
         if (homepageBtn.isChecked()) {
@@ -87,7 +114,7 @@ public class HomePageActivity extends Activity {
                     }
                     transaction.replace(R.id.ll, classifyFragment);
                     break;
-                case R.id.rb_shop:
+                case R.id.rb_shop:  //餐具控件
                     if (shopFragment==null){
                         shopFragment=new ShopFragment();
                     }
@@ -106,9 +133,14 @@ public class HomePageActivity extends Activity {
                     transaction.replace(R.id.ll,squareFragment);
                     break;
                 case R.id.more_imgview:
+                    morePopupWindow();
                     break;
                 case R.id.head_imageview:
                     intent = new Intent(HomePageActivity.this,GuidepageLoginActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.search_imgs:
+                    intent = new Intent(HomePageActivity.this,SearchActivity.class);
                     startActivity(intent);
                     break;
             }
@@ -122,5 +154,19 @@ public class HomePageActivity extends Activity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.ll, homepageFragment);
         fragmentTransaction.commit();
+    }
+
+    //首页more选项弹出框popupWindow
+    public void morePopupWindow(){
+        layoutInflater = LayoutInflater.from(this);
+        View contentView = layoutInflater.inflate(R.layout.activity_popup_more,null);
+        popupWindow = new PopupWindow(contentView);
+        popupWindow.setOutsideTouchable(true);
+        popupWindow.setFocusable(true);
+        popupWindow.setWidth(LinearLayout.LayoutParams.WRAP_CONTENT);
+        popupWindow.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
+        popupWindow.setBackgroundDrawable(getResources().getDrawable(R.drawable.homepage_edittext_serch_shape));
+        popupWindow.showAsDropDown(moreImgview,-180,10);
+
     }
 }

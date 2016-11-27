@@ -1,7 +1,7 @@
 package com.example.administrator.catemenu.adapter;
 
+import com.example.administrator.catemenu.activity.ClassifyMeatActivity;
 import android.widget.BaseAdapter;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +19,7 @@ public class MeatItemAdapter extends BaseAdapter {
     Context context;
     List<MeatItem> meatItemList;
     LayoutInflater layoutInflater;
-    public MeatItemAdapter(Context context, List<MeatItem> meatItemList) {
+    public MeatItemAdapter(ClassifyMeatActivity context, List<MeatItem> meatItemList) {
         this.context = context;
         this.meatItemList = meatItemList;
         layoutInflater = LayoutInflater.from(context);

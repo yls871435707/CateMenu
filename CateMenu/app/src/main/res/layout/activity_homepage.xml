@@ -28,7 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/homepage_edittext_bg_shape"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp">
 
             <EditText
                 android:layout_width="0dp"
@@ -44,9 +45,12 @@
                 android:background="@android:color/darker_gray" />
 
             <ImageView
+                android:id="@+id/search_imgs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/serch" />
+                android:src="@mipmap/serch"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
         </LinearLayout>
 
         <ImageView

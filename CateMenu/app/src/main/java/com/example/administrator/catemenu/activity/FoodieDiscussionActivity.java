@@ -3,14 +3,9 @@ package com.example.administrator.catemenu.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
-
-
-
 import com.example.administrator.catemenu.R;
 import com.example.administrator.catemenu.adapter.FoodXjqbAdapter;
 import com.example.administrator.catemenu.modle.FoodXjqb;
-
-
 import java.util.ArrayList;
 import java.util.List;
 

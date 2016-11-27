@@ -8,15 +8,8 @@
     <color name="red">#FE0000</color>
     <color name="gray_bg">#EEEEEE</color>
     <color name="gray_word">#B3B3B3</color>
-<<<<<<< HEAD
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
-=======
-
-
-
-
-
     <color name="Theme_colors">#FFB023</color>
     <color name="bottom_menu_text_cheked_ture_color">#FF5023</color>
     <color name="bottom_menu_text_cheked_false_color">#FFFFFE</color>
@@ -24,6 +17,4 @@
     <color name="food_text_cheked_false_color">#6D6D6D</color>
     <color name="bright_black_color">#535353</color>
     <color name="Light_grey_color">#A7A7A7</color>
-
->>>>>>> df0f1907e266e625386acc3cff01f76cabb3645b
 </resources>

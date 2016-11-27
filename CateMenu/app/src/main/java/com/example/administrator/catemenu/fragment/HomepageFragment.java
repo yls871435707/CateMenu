@@ -2,12 +2,12 @@ package com.example.administrator.catemenu.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
+<<<<<<< HEAD
 
 
-
-
+=======
 import android.content.Intent;
-
+>>>>>>> e293c4a72a7e4b8d968c9a8cbf932bb5dd0d9de3
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -25,11 +25,12 @@ import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 
 import com.example.administrator.catemenu.R;
-
+<<<<<<< HEAD
+=======
 import com.example.administrator.catemenu.activity.SeasonRecommendActivity;
 import com.example.administrator.catemenu.activity.TodayRecommendActivity;
 import com.example.administrator.catemenu.activity.WeekOrderActivity;
-
+>>>>>>> e293c4a72a7e4b8d968c9a8cbf932bb5dd0d9de3
 
 
 import java.lang.ref.WeakReference;
@@ -61,23 +62,23 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
         desssert = (RadioButton) view.findViewById(R.id.btn_dessert);
         dinner = (RadioButton) view.findViewById(R.id.btn_dinner);
         lunch = (RadioButton) view.findViewById(R.id.btn_lunch);
-
+<<<<<<< HEAD
         viewPager = (ViewPager) view.findViewById(R.id.homepage_viewpager);
 
         intopager();
-
+=======
         viewPager = (ViewPager) view.findViewById(R.id.viewpager);
         todayRecommend = (RelativeLayout) view.findViewById(R.id.today_recommend);
         weekOrder = (RelativeLayout) view.findViewById(R.id.week_order);
         season = (RelativeLayout) view.findViewById(R.id.season);
         activity = getActivity();
-
+>>>>>>> e293c4a72a7e4b8d968c9a8cbf932bb5dd0d9de3
 
         breakfast.setOnClickListener(this);
         desssert.setOnClickListener(this);
         dinner.setOnClickListener(this);
         lunch.setOnClickListener(this);
-
+<<<<<<< HEAD
         return view;
     }
     //加载banner的数据
@@ -230,6 +231,16 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
         }
     }
 
+    //设置点击事件
+=======
+        todayRecommend.setOnClickListener(this);
+        weekOrder.setOnClickListener(this);
+        season.setOnClickListener(this);
+
+        return view;
+    }
+
+>>>>>>> e293c4a72a7e4b8d968c9a8cbf932bb5dd0d9de3
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

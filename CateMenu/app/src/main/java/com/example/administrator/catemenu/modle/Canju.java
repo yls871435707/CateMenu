@@ -1,4 +1,4 @@
-package com.modle;
+package com.example.administrator.catemenu.modle;
 
 /**
  * Created by Administrator on 2016/11/25.

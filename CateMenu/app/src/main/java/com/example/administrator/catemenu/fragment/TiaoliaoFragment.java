@@ -1,4 +1,4 @@
-package com.fragment;
+package com.example.administrator.catemenu.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-import com.adapter.TiaoliaoAdapter;
+import com.example.administrator.catemenu.adapter.TiaoliaoAdapter;
 import com.example.administrator.catemenu.R;
-import com.modle.Tiaoliao;
+import com.example.administrator.catemenu.modle.Tiaoliao;
 
 import java.util.ArrayList;
 import java.util.List;

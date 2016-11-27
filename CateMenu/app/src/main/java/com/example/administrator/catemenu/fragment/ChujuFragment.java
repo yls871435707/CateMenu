@@ -1,4 +1,4 @@
-package com.fragment;
+package com.example.administrator.catemenu.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-import com.adapter.ChujuAdapter;
+import com.example.administrator.catemenu.adapter.ChujuAdapter;
 import com.example.administrator.catemenu.R;
-import com.modle.Chuju;
+import com.example.administrator.catemenu.modle.Chuju;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.adapter;
+package com.example.administrator.catemenu.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,19 +9,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.administrator.catemenu.R;
-import com.modle.Tiaoliao;
+import com.example.administrator.catemenu.modle.Canju;
 
 import java.util.List;
 
 /**
- * Created by Administrator on 2016/11/27.
+ * Created by Administrator on 2016/11/25.
  */
-public class TiaoliaoAdapter extends BaseAdapter {
+public class CanjuAdapter extends BaseAdapter {
     Context context;
-    List<Tiaoliao> list;
+    List<Canju> list;
     LayoutInflater layoutInflater;
 
-    public TiaoliaoAdapter(Context context, List<Tiaoliao> list) {
+    public CanjuAdapter(Context context, List<Canju> list) {
         this.context = context;
         this.list = list;
         layoutInflater = LayoutInflater.from(context);
@@ -45,15 +45,16 @@ public class TiaoliaoAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView==null){
-            convertView = layoutInflater.inflate(R.layout.supermarket_tiaoliao_item_layout,null);
+            convertView = layoutInflater.inflate(R.layout.supermarket_canju_item_layout,null);
         }
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.tiaoliao_imageview);
-        TextView textViewName = (TextView) convertView.findViewById(R.id.tiaoliao_name);
-        TextView textViewPrice = (TextView) convertView.findViewById(R.id.tiaoliao_price);
-        Tiaoliao tiaoliao = list.get(position);
-        imageView.setImageResource(tiaoliao.getImage());
-        textViewName.setText(tiaoliao.getName());
-        textViewPrice.setText(tiaoliao.getPrivace());
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.canju1_imageview);
+        TextView textView = (TextView) convertView.findViewById(R.id.canju1_name);
+        TextView textView1 = (TextView) convertView.findViewById(R.id.canju1_price);
+        Canju canju = list.get(position);
+        imageView.setImageResource(canju.getImage());
+        textView.setText(canju.getName());
+        textView1.setText(canju.getPrivace());
         return convertView;
     }
+
 }

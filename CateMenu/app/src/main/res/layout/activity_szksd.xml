@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,43 +20,43 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="@string/today_recommend"
+            android:text="蒜仔烤鳝段"
             android:textColor="@android:color/white"
             android:textSize="23sp" />
         <ImageView
-            android:id="@+id/head_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/head"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/kswy"
-            android:adjustViewBounds="true"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="烤三文鱼"
-            android:textSize="20sp"
-            android:background="@android:color/black"
-            android:padding="5dp"
-            android:alpha="0.5"
-            android:layout_centerInParent="true"
-            android:textColor="@android:color/white"/>
-    </RelativeLayout>
-    <ListView
-        android:id="@+id/listview"
-        android:dividerHeight="10dp"
+        android:layout_height="wrap_content"
+        android:text="搜索结果"
         android:layout_marginTop="10dp"
-        android:divider="@android:color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+    <ListView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其它推荐"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+    <ListView
+        android:id="@+id/other_tuijian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>
-
 </LinearLayout>

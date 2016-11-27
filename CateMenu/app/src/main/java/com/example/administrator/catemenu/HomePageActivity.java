@@ -72,11 +72,14 @@ public class HomePageActivity extends Activity {
                     }
                     transaction.replace(R.id.ll, classifyFragment);
                     break;
-                case R.id.rb_shop:
+                case R.id.rb_shop:  //餐具控件
                     if (shopFragment==null){
                         shopFragment=new ShopFragment();
+                        FragmentManager fragmentManagerShop = getFragmentManager();
+                        FragmentTransaction fragmentTransactionShop = fragmentManagerShop.beginTransaction();
+                        fragmentTransactionShop.replace(R.id.ll,shopFragment);
+                        fragmentTransactionShop.commit();
                     }
-                    transaction.replace(R.id.ll,shopFragment);
                     break;
                 case R.id.rb_feast:
                     if (feastFragment==null){

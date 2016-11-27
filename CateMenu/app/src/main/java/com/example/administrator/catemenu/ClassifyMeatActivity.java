@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.Adapter.MeatItemAdapter;
+import com.adapter.MeatItemAdapter;
 import com.modle.MeatItem;
 
 import java.util.ArrayList;

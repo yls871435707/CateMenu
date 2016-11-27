@@ -4,10 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.Adapter.FoodXjqbAdapter;
-import com.Adapter.MeatItemAdapter;
+import com.adapter.FoodXjqbAdapter;
 import com.modle.FoodXjqb;
-import com.modle.MeatItem;
 
 import java.util.ArrayList;
 import java.util.List;

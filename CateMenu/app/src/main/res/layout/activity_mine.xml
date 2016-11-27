@@ -144,7 +144,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/sixin"
-            android:drawableLeft="@mipmap/sixin"
+            android:drawableLeft="@mipmap/letter"
             android:gravity="center_vertical"
             android:textSize="18sp"
             android:drawablePadding="10dp"/>

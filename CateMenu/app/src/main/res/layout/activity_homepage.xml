@@ -45,7 +45,7 @@
                 android:background="@android:color/darker_gray" />
 
             <ImageView
-                android:id="@+id/search_img"
+                android:id="@+id/search_imgs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/serch"

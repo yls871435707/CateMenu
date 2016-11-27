@@ -44,7 +44,7 @@ public class HomePageActivity extends Activity {
     RadioButton squarerb;
     ImageView moreImgview;
     ImageView headImageview;
-    ImageView searchImg;
+    ImageView searchImgs;
     LayoutInflater layoutInflater;
     PopupWindow popupWindow;
     Intent intent;
@@ -60,7 +60,7 @@ public class HomePageActivity extends Activity {
         shopBtn = (RadioButton) findViewById(R.id.rb_shop);
         feastBtn = (RadioButton) findViewById(R.id.rb_feast);
         squareBtn = (RadioButton) findViewById(R.id.rb_square);
-        searchImg = (ImageView) findViewById(R.id.search_img);
+        searchImgs = (ImageView) findViewById(R.id.search_imgs);
         homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
         classifyrb = (RadioButton) findViewById(R.id.rb_classify);
         shoprb = (RadioButton) findViewById(R.id.rb_shop);
@@ -74,7 +74,7 @@ public class HomePageActivity extends Activity {
         shopBtn.setOnClickListener(clickListener);
         feastBtn.setOnClickListener(clickListener);
         squareBtn.setOnClickListener(clickListener);
-        searchImg.setOnClickListener(clickListener);
+        searchImgs.setOnClickListener(clickListener);
         homepagerb.setOnClickListener(clickListener);
         classifyrb.setOnClickListener(clickListener);
         shoprb.setOnClickListener(clickListener);
@@ -110,11 +110,8 @@ public class HomePageActivity extends Activity {
                 case R.id.rb_shop:  //餐具控件
                     if (shopFragment==null){
                         shopFragment=new ShopFragment();
-                        FragmentManager fragmentManagerShop = getFragmentManager();
-                        FragmentTransaction fragmentTransactionShop = fragmentManagerShop.beginTransaction();
-                        fragmentTransactionShop.replace(R.id.ll,shopFragment);
-                        fragmentTransactionShop.commit();
                     }
+                    transaction.replace(R.id.ll,shopFragment);
                     break;
                 case R.id.rb_feast:
                     if (feastFragment==null){
@@ -135,7 +132,7 @@ public class HomePageActivity extends Activity {
                     intent = new Intent(HomePageActivity.this,MineActivity.class);
                     startActivity(intent);
                     break;
-                case R.id.search_img:
+                case R.id.search_imgs:
                     intent = new Intent(HomePageActivity.this,SearchActivity.class);
                     startActivity(intent);
                     break;

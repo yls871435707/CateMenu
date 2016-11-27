@@ -7,7 +7,7 @@
         android:id="@+id/head_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/paigu1"/>
+        android:src="@mipmap/shanyu1"/>
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -29,18 +29,35 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/collect"
-                android:drawableLeft="@mipmap/collect"
-                android:gravity="center"
-                android:drawablePadding="5dp"
-                android:layout_marginRight="20dp" />
+                android:text="降糖"
+                android:padding="5dp"
+                android:background="@drawable/yellow_bg_shape"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="顶一个"
-                android:gravity="center"
-                android:drawableLeft="@mipmap/zan"
-                android:drawablePadding="10dp"/>
+                android:text="健脑"
+                android:padding="5dp"
+                android:background="@drawable/yellow_bg_shape"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_material"/>
+            <TextView
+                android:id="@+id/material_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="肉，葱"/>
         </LinearLayout>
         <TextView
             android:id="@+id/content_tv"
@@ -48,8 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="分开都是开发商的开了肯定舒到了近"/>
-            android:paddingRight="10dp"/>
         <TextView
+            android:id="@+id/more_tv"
             android:layout_width="wrap_content"
             android:textColor="@color/yellow"
             android:layout_height="wrap_content"

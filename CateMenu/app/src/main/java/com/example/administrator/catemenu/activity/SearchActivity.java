@@ -13,6 +13,7 @@ import com.example.administrator.catemenu.R;
  */
 public class SearchActivity extends Activity{
     TextView cancleTv;
+    TextView searchTv;
     Intent intent;
 
     @Override
@@ -20,16 +21,26 @@ public class SearchActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+        //找到对应控件id
         cancleTv = (TextView) findViewById(R.id.cancle_tv);
+        searchTv = (TextView) findViewById(R.id.search_tv);
+
+        //设置点击事件
         cancleTv.setOnClickListener(clickListener);
+        searchTv.setOnClickListener(clickListener);
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             switch (view.getId()){
+                case R.id.search_tv:
+                    intent = new Intent(SearchActivity.this,MadeDetailsActivity.class);
+                    startActivity(intent);
+                    break;
                 case R.id.cancle_tv:
                     intent = new Intent(SearchActivity.this,HomePageActivity.class);
+                    startActivity(intent);
                     break;
             }
         }

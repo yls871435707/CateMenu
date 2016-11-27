@@ -3,6 +3,7 @@ package com.example.administrator.catemenu.fragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
 import com.example.administrator.catemenu.R;
+import com.example.administrator.catemenu.activity.SquarePublishActivity;
 
 /**
  * Created by Administrator on 2016/11/13.
@@ -56,20 +58,22 @@ public class SquareFragment extends Fragment {
             switch (view.getId()) {
 
                 case R.id.rb_square_discuss:
-                    if (squareDiscussFragment != null) {
+                    if (squareDiscussFragment == null) {
                         squareDiscussFragment = new SquareDiscussFragment();
                     }
                     transaction.replace(R.id.ll_square_fragment, squareDiscussFragment);
                     break;
 
                 case R.id.rb_square_release:
+                    Intent intent=new Intent(getActivity(), SquarePublishActivity.class);
+                    startActivity(intent);
                     break;
 
                 case R.id.rb_square_video:
-//                    if (squareVideoFragment != null) {
-//                        squareVideoFragment = new SquareVideoFragment();
-//                    }
-                   //transaction.replace(R.id.ll_square_fragment, squareVideoFragment);
+                    if (squareVideoFragment == null) {
+                        squareVideoFragment = new SquareVideoFragment();
+                    }
+                   transaction.replace(R.id.ll_square_fragment, squareVideoFragment);
                     break;
             }
             transaction.commit();

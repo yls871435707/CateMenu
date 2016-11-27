@@ -19,8 +19,9 @@ public class SquareVideoFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.fragment_square_discuss,null);
+        View view= inflater.inflate(R.layout.fragment_square_adapter,null);
         listView= (ListView) view.findViewById(R.id.square_discuss_listview);
+
 
         SquareVideoFragemtAdapter videoFragemtAdapter=new SquareVideoFragemtAdapter(getActivity());
         listView.setAdapter(videoFragemtAdapter);

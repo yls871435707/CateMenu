@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+<<<<<<< HEAD:CateMenu/app/src/main/java/com/example/administrator/catemenu/activity/AttentionActivity.java
 import com.example.administrator.catemenu.R;
+=======
+import com.example.administrator.catemenu.activity.MineActivity;
+>>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1:CateMenu/app/src/main/java/com/example/administrator/catemenu/AttentionActivity.java
 
 /**
  * Created by Administrator on 2016/11/26.

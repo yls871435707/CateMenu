@@ -1,4 +1,9 @@
 package com.example.administrator.catemenu.adapter;
+<<<<<<< HEAD
+=======
+
+import android.widget.BaseAdapter;
+>>>>>>> 72c5b82c51861485b4d8a1c9ab9c78987fefa0f1
 
 import android.widget.BaseAdapter;
 import android.content.Context;

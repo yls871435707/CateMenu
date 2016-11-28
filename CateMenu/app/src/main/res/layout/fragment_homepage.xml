@@ -17,13 +17,8 @@
                 <android.support.v4.view.ViewPager
                     android:id="@+id/homepage_viewpager"
                     android:layout_width="match_parent"
-<<<<<<< HEAD
                     android:layout_height="wrap_content"
                      />
-
-=======
-                    android:layout_height="wrap_content" />
->>>>>>> 47c4eaab6ed70dfaac205d3960dde6d68afb58eb
             </RelativeLayout>
 
             <RadioGroup

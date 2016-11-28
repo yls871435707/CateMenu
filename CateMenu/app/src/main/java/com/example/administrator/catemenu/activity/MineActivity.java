@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.administrator.catemenu.R;
+<<<<<<< HEAD
+=======
+
+>>>>>>> yanliangshu
 
 /**
  * Created by Administrator on 2016/11/7.
@@ -48,9 +52,12 @@ public class MineActivity extends Activity {
         collectTv.setOnClickListener(clickListener);
         shareTv.setOnClickListener(clickListener);
         attentionTv.setOnClickListener(clickListener);
+<<<<<<< HEAD
+=======
+
+>>>>>>> yanliangshu
         uploadTv.setOnClickListener(clickListener);
     }
-
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {

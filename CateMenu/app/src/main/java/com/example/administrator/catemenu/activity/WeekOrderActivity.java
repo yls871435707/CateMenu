@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.example.administrator.catemenu.R;
 import com.example.administrator.catemenu.adapter.WeekOrderAdapter;
@@ -28,6 +30,10 @@ public class WeekOrderActivity extends Activity {
     ListView weekListview;
     ImageView headImg;
     ImageView closeImg;
+    RadioButton btnBreakfast;
+    RadioButton btnLunch;
+    RadioButton btnDessert;
+    RadioButton btnDinner;
     List<WeekOrder> weekOrderList = new ArrayList<WeekOrder>();
 
     @Override
@@ -40,10 +46,19 @@ public class WeekOrderActivity extends Activity {
         backBtn = (ImageView) findViewById(R.id.back_btn);
         headImg = (ImageView) findViewById(R.id.head_img);
         weekListview = (ListView) findViewById(R.id.week_listview);
+        btnBreakfast = (RadioButton) findViewById(R.id.btn_breakfast);
+        btnLunch = (RadioButton) findViewById(R.id.btn_lunch);
+        btnDessert = (RadioButton) findViewById(R.id.btn_dessert);
+        btnDinner = (RadioButton) findViewById(R.id.btn_dinner);
 
         //设置点击事件
         backBtn.setOnClickListener(clickListener);
         headImg.setOnClickListener(clickListener);
+        btnBreakfast.setChecked(true);
+        btnBreakfast.setOnClickListener(clickListener);
+        btnLunch.setOnClickListener(clickListener);
+        btnDessert.setOnClickListener(clickListener);
+        btnDinner.setOnClickListener(clickListener);
 
         //设置适配器
         WeekOrderAdapter weekOrderAdapter = new WeekOrderAdapter(this,weekOrderList);
@@ -85,6 +100,34 @@ public class WeekOrderActivity extends Activity {
                 case R.id.head_img:
                     intent = new Intent(WeekOrderActivity.this, MineActivity.class);
                     startActivity(intent);
+                    break;
+                case R.id.btn_breakfast:
+                    if(btnBreakfast.isChecked() == true){
+                        btnLunch.setChecked(false);
+                        btnDessert.setChecked(false);
+                        btnDinner.setChecked(false);
+                    }
+                    break;
+                case R.id.btn_lunch:
+                    if(btnLunch.isChecked() == true){
+                        btnBreakfast.setChecked(false);
+                        btnDessert.setChecked(false);
+                        btnDinner.setChecked(false);
+                    }
+                    break;
+                case R.id.btn_dessert:
+                    if(btnDessert.isChecked() == true){
+                        btnLunch.setChecked(false);
+                        btnBreakfast.setChecked(false);
+                        btnDinner.setChecked(false);
+                    }
+                    break;
+                case R.id.btn_dinner:
+                    if(btnDinner.isChecked() == true){
+                        btnLunch.setChecked(false);
+                        btnDessert.setChecked(false);
+                        btnBreakfast.setChecked(false);
+                    }
                     break;
             }
         }

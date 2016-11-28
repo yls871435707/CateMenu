@@ -22,7 +22,6 @@ public class SquareDiscussFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_square_adapter,null);
         listView= (ListView) view.findViewById(R.id.square_discuss_listview);
 
-
         SquareDiscussFragemtAdapter discussFragemtAdapter=new SquareDiscussFragemtAdapter(getActivity());
         listView.setAdapter(discussFragemtAdapter);
 

@@ -17,10 +17,7 @@
             android:id="@+id/head_imageview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="7dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginTop="7dp"
+            android:padding="8dp"
             android:src="@mipmap/head" />
 
         <LinearLayout

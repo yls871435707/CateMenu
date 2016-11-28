@@ -61,10 +61,7 @@ public class HomePageActivity extends Activity {
         shopBtn = (RadioButton) findViewById(R.id.rb_shop);
         feastBtn = (RadioButton) findViewById(R.id.rb_feast);
         squareBtn = (RadioButton) findViewById(R.id.rb_square);
-<<<<<<< HEAD
         headimg= (ImageView) findViewById(R.id.head_imageview);
-
-=======
         searchImgs = (ImageView) findViewById(R.id.search_imgs);
         homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
         classifyrb = (RadioButton) findViewById(R.id.rb_classify);
@@ -73,7 +70,6 @@ public class HomePageActivity extends Activity {
         squarerb = (RadioButton) findViewById(R.id.rb_square);
         moreImgview = (ImageView) findViewById(R.id.more_imgview);
         headImageview = (ImageView) findViewById(R.id.head_imageview);
->>>>>>> e293c4a72a7e4b8d968c9a8cbf932bb5dd0d9de3
 
         headimg.setOnClickListener(clickListener);
         homepageBtn.setOnClickListener(clickListener);

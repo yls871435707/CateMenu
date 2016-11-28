@@ -9,13 +9,14 @@
         android:layout_height="wrap_content"
         android:background="@color/yellow">
         <ImageView
-            android:id="@+id/back_btn"
+            android:id="@+id/search_result_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:padding="11dp"
             android:src="@mipmap/back" />
         <TextView
+            android:id="@+id/search_result_caiming"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -28,7 +29,9 @@
             android:layout_height="wrap_content"
             android:src="@mipmap/head"
             android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
@@ -39,12 +42,22 @@
         android:textSize="20sp"
         android:textColor="@color/black"
         />
-    <ListView
-        android:id="@+id/search_result"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-    </ListView>
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@color/gray_bg">
+        <ListView
+            android:id="@+id/search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="8dp"
+            android:divider="@color/white"
+            android:scrollbars="none"
+            >
+        </ListView>
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,9 +67,21 @@
         android:textSize="20sp"
         android:textColor="@color/black"
         />
-    <ListView
-        android:id="@+id/other_tuijian"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/gray_bg"
+        android:layout_margin="10dp"
+        >
+        <ListView
+            android:id="@+id/other_tuijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="8dp"
+            android:divider="@color/white"
+            android:scrollbars="none"
+            >
+        </ListView>
+    </LinearLayout>
 </LinearLayout>

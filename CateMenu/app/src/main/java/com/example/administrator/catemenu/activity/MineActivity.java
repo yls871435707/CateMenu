@@ -28,8 +28,6 @@ public class MineActivity extends Activity {
     TextView shareTv;
     TextView attentionTv;
     Intent intent;
-    ListView listView;
-    List<Private> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,29 +51,6 @@ public class MineActivity extends Activity {
         collectTv.setOnClickListener(clickListener);
         shareTv.setOnClickListener(clickListener);
         attentionTv.setOnClickListener(clickListener);
-
-        listView = (ListView) findViewById(R.id.mine_listview);
-        list = getData();
-        PrivateAdapter privateAdapter = new PrivateAdapter(this,list);
-        listView.setAdapter(privateAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                intent = new Intent(MineActivity.this,SixinActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
-    public List<Private> getData(){
-        list = new ArrayList<>();
-        for (int i=0;i<10;i++){
-           Private p = new Private();
-            p.setImageView(R.mipmap.head_img1);
-            p.setSheZhi("个人设置");
-            p.setShiJian("暴走大事件，每周五更新");
-            list.add(p);
-        }
-        return list;
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {

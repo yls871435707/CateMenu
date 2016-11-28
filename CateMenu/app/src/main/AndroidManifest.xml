@@ -43,6 +43,8 @@
         <activity android:name=".activity.AttentionActivity"/>
         <activity android:name=".activity.SearchActivity"/>
         <activity android:name=".activity.MadeDetailsActivity"/>
+        <activity android:name=".activity.SixinActivity"/>
+        <activity android:name=".activity.SearchResultActivity"/>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.catemenu.R;
+import com.example.administrator.catemenu.modle.SearchResult;
 
 /**
  * Created by Administrator on 2016/11/26.
@@ -35,7 +36,7 @@ public class SearchActivity extends Activity{
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.search_tv:
-                    intent = new Intent(SearchActivity.this,MadeDetailsActivity.class);
+                    intent = new Intent(SearchActivity.this,SearchResultActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.cancle_tv:

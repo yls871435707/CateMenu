@@ -35,7 +35,7 @@ public class MadeDetailsActivity extends Activity {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.back_img:
-                    intent = new Intent(MadeDetailsActivity.this,HomePageActivity.class);
+                    intent = new Intent(MadeDetailsActivity.this,SearchActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.head_img:

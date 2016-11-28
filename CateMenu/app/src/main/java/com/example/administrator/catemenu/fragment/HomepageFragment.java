@@ -63,6 +63,7 @@ public class HomepageFragment extends Fragment implements View.OnClickListener {
         season = (RelativeLayout) view.findViewById(R.id.season);
         activity = getActivity();
 
+        breakfast.setChecked(true);
         breakfast.setOnClickListener(this);
         desssert.setOnClickListener(this);
         dinner.setOnClickListener(this);

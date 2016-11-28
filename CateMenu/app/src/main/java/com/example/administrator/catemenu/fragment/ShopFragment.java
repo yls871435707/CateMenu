@@ -32,7 +32,6 @@ public class ShopFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_shop,null);
-        radioGroup = (RadioGroup) view.findViewById(R.id.shop_radioGroup);
 
         //找到radioButton相关控件
         canjuRadioButton = (RadioButton) view.findViewById(R.id.canju_radioButton);
@@ -45,7 +44,10 @@ public class ShopFragment extends Fragment {
         canjuRadioButton.setOnClickListener(clickListener);
         tiaoliaoRadioButton.setOnClickListener(clickListener);
 
-
+        chujuRadioButton.setChecked(true);
+        if(chujuRadioButton.isChecked()){
+            addHomepageFragment();
+        }
         return view;
     }
 
@@ -58,20 +60,20 @@ public class ShopFragment extends Fragment {
                 case R.id.chuju_radioButton:       //厨具
                     if (chujuFragment==null){
                         chujuFragment = new ChujuFragment();
-                        transaction.replace(R.id.shop_linearLayout,chujuFragment);
                     }
+                    transaction.replace(R.id.shop_linearLayout,chujuFragment);
                     break;
                 case R.id.canju_radioButton:       //餐具
                     if (canjuFragment==null){
                         canjuFragment = new CanjuFragment();
-                        transaction.replace(R.id.shop_linearLayout,canjuFragment);
                     }
+                    transaction.replace(R.id.shop_linearLayout,canjuFragment);
                     break;
                 case R.id.tiaoliao_radioButton:    //调料
                     if (tiaoliaoFragment==null){
                         tiaoliaoFragment = new TiaoliaoFragment();
-                        transaction.replace(R.id.shop_linearLayout,tiaoliaoFragment);
                     }
+                    transaction.replace(R.id.shop_linearLayout,tiaoliaoFragment);
                     break;
             }
             transaction.commit();
@@ -82,7 +84,7 @@ public class ShopFragment extends Fragment {
         chujuFragment = new ChujuFragment();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.ll_square_fragment, chujuFragment);
+        fragmentTransaction.replace(R.id.shop_linearLayout, chujuFragment);
         fragmentTransaction.commit();
     }
 }

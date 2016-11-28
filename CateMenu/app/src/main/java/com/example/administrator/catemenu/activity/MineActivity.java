@@ -27,6 +27,7 @@ public class MineActivity extends Activity {
     TextView collectTv;
     TextView shareTv;
     TextView attentionTv;
+    TextView uploadTv;
     Intent intent;
 
     @Override
@@ -34,6 +35,7 @@ public class MineActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine);
 
+        //找到对应控件id
         mineBackBtn = (ImageView) findViewById(R.id.mine_back_btn);
         sixinTextview = (TextView) findViewById(R.id.sixin_textview);
         settingBtn = (TextView) findViewById(R.id.setting_btn);
@@ -42,7 +44,9 @@ public class MineActivity extends Activity {
         collectTv = (TextView) findViewById(R.id.collect_tv);
         shareTv = (TextView) findViewById(R.id.share_tv);
         attentionTv = (TextView) findViewById(R.id.attention_tv);
+        uploadTv = (TextView) findViewById(R.id.upload_tv);
 
+        //设置点击事件
         mineBackBtn.setOnClickListener(clickListener);
         sixinTextview.setOnClickListener(clickListener);
         settingBtn.setOnClickListener(clickListener);
@@ -51,6 +55,36 @@ public class MineActivity extends Activity {
         collectTv.setOnClickListener(clickListener);
         shareTv.setOnClickListener(clickListener);
         attentionTv.setOnClickListener(clickListener);
+<<<<<<< HEAD
+=======
+        uploadTv.setOnClickListener(clickListener);
+
+        //设置适配器
+        listView = (ListView) findViewById(R.id.mine_listview);
+        list = getData();
+        PrivateAdapter privateAdapter = new PrivateAdapter(this,list);
+        listView.setAdapter(privateAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                intent = new Intent(MineActivity.this,SixinActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    //获取数据源
+    public List<Private> getData(){
+        list = new ArrayList<>();
+        for (int i=0;i<10;i++){
+           Private p = new Private();
+            p.setImageView(R.mipmap.head_img1);
+            p.setSheZhi("个人设置");
+            p.setShiJian("暴走大事件，每周五更新");
+            list.add(p);
+        }
+        return list;
+>>>>>>> 47c4eaab6ed70dfaac205d3960dde6d68afb58eb
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {
@@ -86,6 +120,10 @@ public class MineActivity extends Activity {
                     startActivity(intent);
                     break;
                 case R.id.attention_tv:
+                    intent = new Intent(MineActivity.this,AttentionActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.upload_tv:
                     intent = new Intent(MineActivity.this,AttentionActivity.class);
                     startActivity(intent);
                     break;

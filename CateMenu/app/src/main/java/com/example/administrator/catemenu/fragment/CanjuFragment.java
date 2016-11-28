@@ -28,9 +28,9 @@ public class CanjuFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.supermarket_canju_layout,null);
+        View view = inflater.inflate(R.layout.activity_shop_rootlayout,null);
         final Activity canjuActivity = getActivity();
-        gridView = (GridView) view.findViewById(R.id.canju_gridview);
+        gridView = (GridView) view.findViewById(R.id.gridview);
         list=getData();
         CanjuAdapter canjuAdapter = new CanjuAdapter(canjuActivity,list);
         gridView.setAdapter(canjuAdapter);

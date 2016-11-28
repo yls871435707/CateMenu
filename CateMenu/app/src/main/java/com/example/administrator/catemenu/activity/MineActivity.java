@@ -4,16 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import com.example.administrator.catemenu.R;
-import com.example.administrator.catemenu.adapter.PrivateAdapter;
-import com.example.administrator.catemenu.modle.Private;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Administrator on 2016/11/7.
@@ -55,38 +49,9 @@ public class MineActivity extends Activity {
         collectTv.setOnClickListener(clickListener);
         shareTv.setOnClickListener(clickListener);
         attentionTv.setOnClickListener(clickListener);
-<<<<<<< HEAD
-=======
+
         uploadTv.setOnClickListener(clickListener);
-
-        //设置适配器
-        listView = (ListView) findViewById(R.id.mine_listview);
-        list = getData();
-        PrivateAdapter privateAdapter = new PrivateAdapter(this,list);
-        listView.setAdapter(privateAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                intent = new Intent(MineActivity.this,SixinActivity.class);
-                startActivity(intent);
-            }
-        });
     }
-
-    //获取数据源
-    public List<Private> getData(){
-        list = new ArrayList<>();
-        for (int i=0;i<10;i++){
-           Private p = new Private();
-            p.setImageView(R.mipmap.head_img1);
-            p.setSheZhi("个人设置");
-            p.setShiJian("暴走大事件，每周五更新");
-            list.add(p);
-        }
-        return list;
->>>>>>> 47c4eaab6ed70dfaac205d3960dde6d68afb58eb
-    }
-
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {

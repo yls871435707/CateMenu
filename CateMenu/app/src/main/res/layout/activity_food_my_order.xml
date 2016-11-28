@@ -25,7 +25,7 @@
             android:textSize="23sp" />
     </RelativeLayout>
     <ListView
-        android:id="@+id/my_order"
+        android:id="@+id/my_order_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:dividerHeight="3dp"

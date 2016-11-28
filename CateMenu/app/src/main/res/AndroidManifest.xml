@@ -44,13 +44,23 @@
         <activity android:name=".activity.SearchActivity"/>
         <activity android:name=".activity.MadeDetailsActivity"/>
         <activity android:name=".activity.SixinActivity"/>
+<<<<<<< HEAD:CateMenu/app/src/main/AndroidManifest.xml
         <activity android:name=".activity.SearchResultActivity"/>
+=======
+>>>>>>> yanliangshu:CateMenu/app/src/main/res/AndroidManifest.xml
         <activity android:name=".activity.SquarePublishActivity"/>
         <activity android:name=".activity.SquareDiscussTopicActivity"/>
         <activity android:name=".activity.SquareDiscussTopicUserCommentsActivity"/>
         <activity android:name=".activity.ClassifyMeatActivity"/>
         <activity android:name=".activity.UploadActivity"/>
+<<<<<<< HEAD:CateMenu/app/src/main/AndroidManifest.xml
         <activity android:name=".activity.MyFoodOrderActivity"/>
+=======
+<<<<<<< HEAD:CateMenu/app/src/main/AndroidManifest.xml
+=======
+
+>>>>>>> yanliangshu:CateMenu/app/src/main/res/AndroidManifest.xml
+>>>>>>> e9caa6d95b65e935d4875c85574c30c66459c269:CateMenu/app/src/main/res/AndroidManifest.xml
     </application>
 
 </manifest>

@@ -43,8 +43,15 @@
         <activity android:name=".activity.AttentionActivity"/>
         <activity android:name=".activity.SearchActivity"/>
         <activity android:name=".activity.MadeDetailsActivity"/>
+<<<<<<< HEAD
         <activity android:name=".activity.SixinActivity"/>
         <activity android:name=".activity.SearchResultActivity"/>
+=======
+        <activity android:name=".activity.SquarePublishActivity"/>
+        <activity android:name=".activity.SquareDiscussTopicActivity"/>
+        <activity android:name=".activity.SquareDiscussTopicUserCommentsActivity"/>
+
+>>>>>>> 4eb1e08685047a66b97bb983babafa1af99ac688
     </application>
 
 </manifest>

@@ -32,6 +32,7 @@ public class HomePageActivity extends Activity {
     FeastFragment feastFragment;
     SquareFragment squareFragment;
     LinearLayout linearLayout;
+    ImageView headimg;
     RadioButton homepageBtn;
     RadioButton classifyBtn;
     RadioButton shopBtn;
@@ -60,6 +61,7 @@ public class HomePageActivity extends Activity {
         shopBtn = (RadioButton) findViewById(R.id.rb_shop);
         feastBtn = (RadioButton) findViewById(R.id.rb_feast);
         squareBtn = (RadioButton) findViewById(R.id.rb_square);
+        headimg= (ImageView) findViewById(R.id.head_imageview);
         searchImgs = (ImageView) findViewById(R.id.search_imgs);
         homepagerb = (RadioButton) findViewById(R.id.rb_homepage);
         classifyrb = (RadioButton) findViewById(R.id.rb_classify);
@@ -69,6 +71,7 @@ public class HomePageActivity extends Activity {
         moreImgview = (ImageView) findViewById(R.id.more_imgview);
         headImageview = (ImageView) findViewById(R.id.head_imageview);
 
+        headimg.setOnClickListener(clickListener);
         homepageBtn.setOnClickListener(clickListener);
         classifyBtn.setOnClickListener(clickListener);
         shopBtn.setOnClickListener(clickListener);
@@ -129,7 +132,7 @@ public class HomePageActivity extends Activity {
                     morePopupWindow();
                     break;
                 case R.id.head_imageview:
-                    intent = new Intent(HomePageActivity.this,MineActivity.class);
+                    intent = new Intent(HomePageActivity.this,GuidepageLoginActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.search_imgs:
